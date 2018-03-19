@@ -8,6 +8,6 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F03%2F15%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment1297 1298 1299 (function(d, s) {1300 var j, e = d.getElementsByTagName(s)[0];1301​1302 if (typeof LivereTower === ‘function’) { return; }1303​1304 j = d.createElement(s);1305 j.src = ‘https://cdn-city.livere.com/js/embed.dist.js&#39;;1306 j.async = true;1307​1308 e.parentNode.insertBefore(j, e);1309 })(document, ‘script’);13101311 为正常使用来必力评论功能请激活JavaScript13121313​]]></content>
   </entry>
 </search>
