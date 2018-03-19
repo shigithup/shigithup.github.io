@@ -4,12 +4,34 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/03/15/hello-world/</loc>
-    <lastmod>2018-03-19T03:39:53.696Z</lastmod>
+    <loc>http://yoursite.com/2018/03/19/%E6%88%91%E6%98%AF%E6%AD%A3%E5%BC%8F%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2018-03-19T12:51:34.238Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2018-03-15T10:00:27.595Z</pubTime>
+        <title>我是正式测试文章</title>
+        <pubTime>2018-03-19T08:53:25.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>测试</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/03/17/%E6%88%91%E6%98%AF%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2018-03-19T05:58:45.570Z</lastmod>
+    <data>
+        <display>
+        <title>我是测试文章</title>
+        <pubTime>2018-03-17T05:15:13.000Z</pubTime>
         
          
            
@@ -19,12 +41,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/03/17/%E6%88%91%E6%98%AF%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2018-03-17T05:15:13.528Z</lastmod>
+    <loc>http://yoursite.com/2018/03/15/hello-world/</loc>
+    <lastmod>2018-03-19T03:43:03.241Z</lastmod>
     <data>
         <display>
-        <title>我是测试文章</title>
-        <pubTime>2018-03-17T05:15:13.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2018-03-15T10:00:27.595Z</pubTime>
         
          
            
