@@ -359,14 +359,7 @@
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    </div>
+     <div id="gitalk-container"></div>  
 
   
 
@@ -606,6 +599,22 @@
 
 
   
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'f18321007ae8ae689494',
+          clientSecret: '84a1a98b233774398589b8427716c86f2ee65445',
+          repo: 'shigithup.github.io',
+          owner: 'shigithup',
+          admin: ['shigithup'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+
 
 
   
@@ -663,46 +672,6 @@
 
 
 
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'shigithup',
-            repo: 'gitment-comments',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'cbe860ed1cf65630ca8403fe15eb23debbc18af4',
-            
-                client_id: '853f5c9483be434789da'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      function showGitment(){
-        document.getElementById("gitment-display-button").style.display = "none";
-        document.getElementById("gitment-container").style.display = "block";
-        renderGitment();
-      }
-      
-      </script>
-    
 
 
 
