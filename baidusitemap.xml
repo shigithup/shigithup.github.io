@@ -5,4 +5,22 @@
     
     
     
+    
+  <url>
+    <loc>http://yoursite.com/2018/03/15/hello-world/</loc>
+    <lastmod>2018-03-19T13:09:05.572Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-03-15T10:00:27.595Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="科技" url="http://yoursite.com/categories/%E7%A7%91%E6%8A%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
 </urlset>
