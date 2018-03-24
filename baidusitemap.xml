@@ -3,11 +3,33 @@
 
 
     
+  <url>
+    <loc>https://shigithup.github.io/2018/03/24/%E6%B5%85%E8%81%8Abgcolor%E4%B8%8Ebackground-color/</loc>
+    <lastmod>2018-03-24T03:00:18.342Z</lastmod>
+    <data>
+        <display>
+        <title>浅聊bgcolor与background-color</title>
+        <pubTime>2018-03-24T02:44:21.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
   <url>
-    <loc>http://yoursite.com/2018/03/15/hello-world/</loc>
+    <loc>https://shigithup.github.io/2018/03/15/hello-world/</loc>
     <lastmod>2018-03-19T13:09:05.572Z</lastmod>
     <data>
         <display>
@@ -17,7 +39,7 @@
          
            
              
-              <breadCrumb title="科技" url="http://yoursite.com/categories/%E7%A7%91%E6%8A%80/"/>
+              <breadCrumb title="科技" url="https://shigithup.github.io/categories/%E7%A7%91%E6%8A%80/"/>
           
         </display>
     </data>

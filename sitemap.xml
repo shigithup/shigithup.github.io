@@ -2,28 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>https://shigithup.github.io/2018/03/24/%E6%B5%85%E8%81%8Abgcolor%E4%B8%8Ebackground-color/</loc>
+    
+    <lastmod>2018-03-24T03:00:18.342Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shigithup.github.io/about/index.html</loc>
     
     <lastmod>2018-03-20T10:31:36.069Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>https://shigithup.github.io/categories/index.html</loc>
     
     <lastmod>2018-03-20T10:29:53.888Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>https://shigithup.github.io/tags/index.html</loc>
     
     <lastmod>2018-03-20T10:29:18.268Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/03/15/hello-world/</loc>
+    <loc>https://shigithup.github.io/2018/03/15/hello-world/</loc>
     
     <lastmod>2018-03-19T13:09:05.572Z</lastmod>
     
