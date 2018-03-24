@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Allow: /home/
+Allow: //
 
 Allow: /archives/
 Allow: /categories/
@@ -15,3 +15,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://shigithup.github.io/sitemap.xml
+Sitemap: http://shigithup.github.io/baidusitemap.xml
