@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[读《影响力》]]></title>
-    <url>%2Fnote%2F2018%2Fundefined06%2Fb85ac64d.html</url>
-    <content type="text"><![CDATA[《影响力》【美】 罗伯特.西奥迪尼 著 陈叙 译 中国人民大学出版社 首先这本书还是挺实用的，讲了生活中常见的坑以及应该如何避开别人挖的坑。这本书被营销领域吹得挺厉害的，对此书的评价在结尾处聊。 尚在完善中的思维导图]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[bgcolor与background-color]]></title>
     <url>%2Fnote%2F2018%2Fundefined24%2F2107d71c.html</url>
     <content type="text"><![CDATA[归属不同bgcolor 属于 html标签，更确切的说属于body标签。因为当作用于其他大多数标签时不起作用。但当用于table标签时有作用，至于什么原理，还请聪明的你告诉我。而background-color属于css标签。当然css是大趋势，都用css是最好的。 &lt;html&gt; &lt;body bgcolor=&apos;blue&apos;&gt; &lt;h1 style=&apos;background-color:purple&apos; &gt;春天在哪里&lt;/h1&gt; &lt;h2 bgcolor=&apos;purple&apos;&gt;春天在哪里&lt;/h2&gt; &lt;table bgcolor=&apos;red&apos;&gt; &lt;tr&gt; &lt;td&gt;春天在哪里&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt; 运行以上代码可看出h2并未变成紫色。 注意 属性值务必用英文状态下的字符 。比如&#39;red&#39;，否则目标不会显示红色，而会突变为其他色。 html 的势力范围很明显要比body的势力范围大。（html是页面所到之处，body是内容主体所到之处）]]></content>
