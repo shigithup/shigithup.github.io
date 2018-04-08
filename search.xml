@@ -6,17 +6,6 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[读《影响力》]]></title>
-    <url>%2Fnote%2F2018%2Fundefined06%2Fb85ac64d.html</url>
-    <content type="text"><![CDATA[《影响力》【美】 罗伯特.西奥迪尼 著 陈叙 译 中国人民大学出版社 首先这本书还是挺实用的，讲了生活中常见的坑以及应该如何避开别人挖的坑。这本书被营销领域吹得挺厉害的，对此书的评价在结尾处聊。 尚在完善中的思维导图]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Fnote%2F2018%2Fundefined15%2F4a17b156.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
