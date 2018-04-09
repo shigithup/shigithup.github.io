@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2Fnote%2F2018%2Fundefined07%2Fd87f7e0c.html</url>
-    <content type="text"></content>
+    <title><![CDATA[元素的居中]]></title>
+    <url>%2Fnote%2F2018%2Fundefined09%2F8fedc92a.html</url>
+    <content type="text"><![CDATA[水平垂直居中方法一：.box { width: 400px; height: 200px; background-color: #ccc; margin: auto; position: absolute; left:0; top:0; bottom:0; right:0; } 方法二：引入transform.box { width: 400px; height: 200px; background-color: #ccc; margin: auto; position: absolute; /* 这里要明白绝对定位的50%相对父元素，下面translate50%是盒子box的50% */ left:50%; top:50%; transform: translate(-200px, -100px ) /* 宽高的1/2，另外可用transform: translate(-50%, -50%)替换，效果是一样的*/ 方法三：与方法二相比用margin取代transform.box { width: 400px; height: 200px; background-color: #ccc; position: absolute; left:50%; top:50%; margin-left:-200px; /*这里的-200px不能用-50%所替代*/ margin-top:-100px; } 方法四：弹性布局Flex以下放在所要居中的div父元素中，父元素必须有高度 divpare { height: 800px; display: flex; justify-content: center; align-items: center; } 水平居中参照水平垂直居中： margin：0 auto； left:50%; margin-left:-width/2;或者 transform: translateX(-width·/2) 更多方法请参照https://www.w3cplus.com/css/vertically-center-content-with-css]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>htmlcss</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[bgcolor与background-color]]></title>
+    <url>%2Fnote%2F2018%2Fundefined24%2F2107d71c.html</url>
+    <content type="text"><![CDATA[归属不同bgcolor 属于 html标签，更确切的说属于body标签。因为当作用于其他大多数标签时不起作用。但当用于table标签时有作用，至于什么原理，还请聪明的你告诉我。而background-color属于css标签。当然css是大趋势，都用css是最好的。 &lt;html&gt; &lt;body bgcolor=&apos;blue&apos;&gt; &lt;h1 style=&apos;background-color:purple&apos; &gt;春天在哪里&lt;/h1&gt; &lt;h2 bgcolor=&apos;purple&apos;&gt;春天在哪里&lt;/h2&gt; &lt;table bgcolor=&apos;red&apos;&gt; &lt;tr&gt; &lt;td&gt;春天在哪里&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt; 运行以上代码可看出h2并未变成紫色。 注意 属性值务必用英文状态下的字符 。比如&#39;red&#39;，否则目标不会显示红色，而会突变为其他色。 html 的势力范围很明显要比body的势力范围大。（html是页面所到之处，body是内容主体所到之处）]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>htmlcss</tag>
+      </tags>
   </entry>
 </search>

@@ -4,15 +4,40 @@
 
     
   <url>
-    <loc>https://shigithup.github.io/note/2018/undefined07/d87f7e0c.html</loc>
-    <lastmod>2018-04-07T13:50:13.850Z</lastmod>
+    <loc>https://shigithup.github.io/note/2018/undefined09/8fedc92a.html</loc>
+    <lastmod>2018-04-09T10:16:35.612Z</lastmod>
     <data>
         <display>
-        <title>test</title>
-        <pubTime>2018-04-07T13:49:48.000Z</pubTime>
+        <title>元素的居中</title>
+        <pubTime>2018-04-09T08:25:34.000Z</pubTime>
         
+        <tag>htmlcss</tag>
+         
          
            
+             
+              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined24/2107d71c.html</loc>
+    <lastmod>2018-04-09T08:27:56.010Z</lastmod>
+    <data>
+        <display>
+        <title>bgcolor与background-color</title>
+        <pubTime>2018-03-24T02:44:21.000Z</pubTime>
+        
+        <tag>htmlcss</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
         </display>
     </data>
     </url>
