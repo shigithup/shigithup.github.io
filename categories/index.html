@@ -357,6 +357,7 @@
   
      <div id="gitalk-container"></div>  
 
+
   
 
 
@@ -627,19 +628,27 @@
 
 
   
+
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: 'fb828637d54c75b7d75a',
           clientSecret: '75b3741980377190f6ee29b392d7cf88e7795d3e',
           repo: 'shigithup.github.io',
-          owner: 'shigithup',
+          owner: '',
           admin: ['shigithup'],
-          id: location.pathname,
-          distractionFreeMode: 'true'
+          id: ,
+          labels: '',
+          perPage: ,
+          pagerDirection: '',
+          createIssueManually: ,
+          distractionFreeMode: true
         })
-        gitalk.render('gitalk-container')
+
+        gitalk.render('gitalk-container')           
        </script>
 
 
@@ -674,7 +683,7 @@
 
 
 
-
+.gt-container a{border-bottom: none;}
 
   
 
