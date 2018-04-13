@@ -323,6 +323,221 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://shigithup.github.io/note/2018/undefined13/556216f0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="3039535188@qq.com">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="迷途小书童">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/note/2018/undefined13/556216f0.html" itemprop="url">JavaScript高级程序设计</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-13T19:20:10+08:00">
+                2018-04-13
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-13T22:06:22+08:00">
+                2018-04-13
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/note/2018/undefined13/556216f0.html" class="leancloud_visitors" data-flag-title="JavaScript高级程序设计">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版）</p>
+<h1 id="第一章-JavaScript简介"><a href="#第一章-JavaScript简介" class="headerlink" title="第一章 JavaScript简介"></a>第一章 JavaScript简介</h1><h2 id="1-1-JavaScript简史"><a href="#1-1-JavaScript简史" class="headerlink" title="1.1 JavaScript简史"></a>1.1 JavaScript简史</h2><p>由于网页的大小和复杂性不断增加以及网速的限制。为完成简单的表单验证（是否没有填写某个必填项，是否输入了无效的值）而频繁地与服务器交换数据只会加重用户的负担，为此，1995年当时就职于Netscape公司的Brendan Eich为Netscape Navigator开发了一种名为<code>LiveScript</code>的脚本语言–该语言可同时在浏览器的与服务器中使用（仅在客户端就可以完成简单的验证），为了搭上热炒Java的顺风车，改名为<code>JavaScript</code>。</p>
+<p>微软为与Netscape竞争，在自家的IE浏览器里加入了<code>JScript</code>，就有了两个不同的JavaScript版本，为了标准化，由欧洲制造商协会（ECMA，European Computer MAnufacturers Association）牵头来自一些公司程序员共同制定了ECMA-262–定义一种名为ECMAScrip(发音为“ek-ma-script”)t的新脚本语言标准。</p>
+<h2 id="1-2-JavaScript实现"><a href="#1-2-JavaScript实现" class="headerlink" title="1.2 JavaScript实现"></a>1.2 JavaScript实现</h2><p>一个完整的JavaScript实现应该有以下三个不同的部分组成</p>
+<ul>
+<li>核心（ECMAScript）：提供核心语言功能；</li>
+<li>文档对象模型（DOM）：提供访问和操作网页内容的方法和接口；</li>
+<li>浏览器对象模型（BOM）：提供与浏览器交互的方法和接口。</li>
+</ul>
+<h3 id="1-2-1-ECMAScript"><a href="#1-2-1-ECMAScript" class="headerlink" title="1.2.1  ECMAScript"></a>1.2.1  ECMAScript</h3><p>由ECMA-262定义的ECMAScript与浏览器没有依赖关系，web浏览器只是其实现可能的宿主环境之一。主要定义了核心语言功能：</p>
+<ul>
+<li>语法</li>
+<li>类型</li>
+<li>语句</li>
+<li>关键字</li>
+<li>保留字</li>
+<li>操作符</li>
+<li>对象</li>
+</ul>
+<h3 id="1-2-2-文档对象模型（DOM）"><a href="#1-2-2-文档对象模型（DOM）" class="headerlink" title="1.2.2 文档对象模型（DOM）"></a>1.2.2 文档对象模型（DOM）</h3><p>文档对象模型（DOM,Document Object Model）是针对<code>XML</code>但经过扩展用于HTML的应用程序接口（API，Application Programmaing Interface）。DOM把整个页面映射为一个多层节点结构，形成dom树开发人员获得页面内容和结构的控制权，借助DOM提供的API，开发人员可以轻松自如地删除，添加，替换和修改任何节点。 </p>
+<h1 id="第二章-在HTML中使用JavaScript"><a href="#第二章-在HTML中使用JavaScript" class="headerlink" title="第二章 在HTML中使用JavaScript"></a>第二章 在HTML中使用JavaScript</h1><h2 id="2-1-lt-script-gt-元素"><a href="#2-1-lt-script-gt-元素" class="headerlink" title="2.1 &lt;script&gt;元素"></a>2.1 <code>&lt;script&gt;</code>元素</h2><p>向HTML页面中插入JavaScript的主要方法就是使用<code>&lt;script&gt;</code>元素,在页面中正常情况下按先后顺序依次解析。HTML4.0为<code>&lt;script&gt;</code>定义了下列六个属性</p>
+<ul>
+<li>async：可选。表示立即下载脚本，但不妨碍页面中的其他操作。</li>
+<li>charset：可选。很少用，忽略。</li>
+<li>defer：可选；表示立即下载脚本，但可以延迟到文档完全被解析和显示之后再执行。现实中如果有多个延迟脚本，不一定会按照顺序执行，所以最好只包含一个。</li>
+<li>language：已废弃。</li>
+<li>src：可选。表示包含要执行代码的外部文件地址。</li>
+<li>type：可选。 </li>
+</ul>
+<h2 id="2-2-嵌入代码与外部文件"><a href="#2-2-嵌入代码与外部文件" class="headerlink" title="2.2 嵌入代码与外部文件"></a>2.2 嵌入代码与外部文件</h2><h3 id="2-2-1-嵌入代码"><a href="#2-2-1-嵌入代码" class="headerlink" title="2.2.1 嵌入代码"></a>2.2.1 嵌入代码</h3><pre><code>&lt;script type=&quot;text/javascript&quot;&gt;   
+    function sayHi（）{
+        alert（&quot;Hi!&quot;）
+    }
+&lt;/script&gt;
+</code></pre><p>不能在嵌入的代码中任何地方出现<code>&lt;/script&gt;</code>,这会让浏览器产生一个错误。可通过转义字符“\”,<code>&lt;\/script&gt;</code>.</p>
+<h3 id="2-1-2-嵌入外部文件"><a href="#2-1-2-嵌入外部文件" class="headerlink" title="2.1.2 嵌入外部文件"></a>2.1.2 嵌入外部文件</h3><pre><code>&lt;script type=&quot;text/javascript&quot;  src= &quot;example.js&quot; &gt; &lt;/script&gt;
+</code></pre><p>标签之间不应该包含额外的代码块，会被忽略，只解析外部脚本文件。为减少呈现页面的延迟，通常把JavaScript的引用放在内容之后<code>&lt;/body&gt;</code>之前。</p>
+<h2 id="2-3-lt-noscript-gt-元素"><a href="#2-3-lt-noscript-gt-元素" class="headerlink" title="2.3 &lt;noscript&gt;元素"></a>2.3 <code>&lt;noscript&gt;</code>元素</h2><p>当浏览器不支持js时如何让页面平稳地退化，创造一个<code>&lt;noscript&gt;</code>元素，这个标签能够出现在<code>&lt;body&gt;</code>中的任何HTML元素——<code>&lt;script&gt;</code>元素除外。包含在<code>&lt;noscript&gt;</code>元素中的内容在以下情况才会显示出来：</p>
+<ul>
+<li>浏览器不支持脚本</li>
+<li><p>浏览器支持脚本，但被禁用。</p>
+<p>  <noscript></noscript></p>
+<pre><code>&lt;p&gt;本页面需要支持（启用）JavaScript&lt;/p&gt;
+</code></pre>  <noscript>
+
+
+</noscript></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+    <div>
+   
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://shigithup.github.io/note/2018/undefined11/528414c2.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1228,7 +1443,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1250,7 +1465,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
