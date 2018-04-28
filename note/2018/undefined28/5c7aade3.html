@@ -128,7 +128,8 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/165638308.PNG">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/164436793.PNG">
-<meta property="og:updated_time" content="2018-04-28T08:57:05.073Z">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/171139072.png">
+<meta property="og:updated_time" content="2018-04-28T09:17:47.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Grid and flexbox">
 <meta name="twitter:description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局Flex 是 Flexible Box 的缩写，意为”弹性布局”。W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的">
@@ -376,7 +377,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T16:57:05+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T17:17:47+08:00">
                 2018-04-28
               </time>
             
@@ -493,7 +494,26 @@ wrap-reverse: 可以多行，第一行在下方
 <p><strong>flex-flow</strong></p>
 <p>flex-direction 和 flex-wrap 的简写,默认row nowrap</p>
 <pre><code>flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;
-</code></pre>
+</code></pre><p><strong>justify-content</strong>属性定义了项目在主轴上的对齐方式。</p>
+<p>.box {<br>  justify-content: flex-start | flex-end | center | space-between | space-around;<br>}</p>
+<p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/171139072.png" alt="mark"></p>
+<p>它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。</p>
+<blockquote>
+<p>flex-start（默认值）：左对齐</p>
+</blockquote>
+<blockquote>
+<p>flex-end：右对齐</p>
+</blockquote>
+<blockquote>
+<p>center： 居中</p>
+</blockquote>
+<blockquote>
+<p>space-between：两端对齐，项目之间的间隔都相等。</p>
+</blockquote>
+<blockquote>
+<p>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></span><br><span class="line"><span class="string"><span class="meta">... </span>prompt'''</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
