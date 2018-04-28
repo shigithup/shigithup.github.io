@@ -370,7 +370,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T10:59:44+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T11:16:56+08:00">
                 2018-04-28
               </time>
             
@@ -442,11 +442,39 @@
             <blockquote>
 <p><strong>声明：</strong>本文大部分摘自别处，链接在文末给出。</p>
 </blockquote>
-<h3 id="1-1-Flex布局"><a href="#1-1-Flex布局" class="headerlink" title="1.1 Flex布局"></a>1.1 Flex布局</h3><p>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
-<p>适用范围<br>弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。<br>Flex布局基本概念</p>
-<p><img src="https://img1.doubanio.com/view/subject/l/public/s2141208.jpg" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/5138806-150965ba6c5b61e6.gif?imageMogr2/auto-orient/strip" alt=""></p>
-
+<h3 id="1-Flex布局"><a href="#1-Flex布局" class="headerlink" title="1. Flex布局"></a>1. Flex布局</h3><p>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
+<p>适用范围<br>弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。</p>
+<h4 id="1-1-Flex布局基本概念"><a href="#1-1-Flex布局基本概念" class="headerlink" title="1.1 Flex布局基本概念"></a>1.1 Flex布局基本概念</h4><p><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><strong>弹性容器(Flex container)</strong></p>
+<p>通过设置 <code>display</code> 属性的值为 <code>flex</code> 或 <code>inline-flex</code>来定义弹性容器。</p>
+<p><strong>弹性项目(Flex item)</strong></p>
+<p>弹性容器里子元素自动成为弹性项目，并且弹性项目的<code>float</code>、<code>clear</code>和<code>vertical-align</code>属性将失效。</p>
+<p><strong>轴(Axis)</strong></p>
+<ul>
+<li>主轴（main axis）</li>
+<li>交叉轴（cross axis）</li>
+</ul>
+<p>这个2个轴决定了容器里的项目整体布局效</p>
+<h4 id="1-2-Flex容器属性"><a href="#1-2-Flex容器属性" class="headerlink" title="1.2 Flex容器属性"></a>1.2 Flex容器属性</h4><blockquote>
+<ul>
+<li>flex-direction</li>
+<li>flex-wrap</li>
+<li>flex-flow</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li>align-content</li>
+</ul>
+</blockquote>
+<h5 id="1-2-1-flex-direction"><a href="#1-2-1-flex-direction" class="headerlink" title="1.2.1 flex-direction"></a>1.2.1 flex-direction</h5><p>flex-direction决定主轴方向，默认情况下，元素都是从左到右地分布在主轴上</p>
+<p>4个取值：</p>
+<blockquote>
+<p>flex-direction: row | row-reverse | column | column-reverse;</p>
+</blockquote>
+<pre><code>row（默认值）：主轴为水平方向，起点在左端。
+row-reverse：主轴为水平方向，起点在右端。
+column：主轴为垂直方向，起点在上沿。
+column-reverse：主轴为垂直方向，起点在下沿。
+</code></pre>
           
         
       
@@ -1583,8 +1611,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-11T18:44:29+08:00">
-                2018-04-11
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T15:33:22+08:00">
+                2018-04-28
               </time>
             
           </span>
