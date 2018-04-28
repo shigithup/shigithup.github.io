@@ -117,21 +117,22 @@
 
 
 
-<meta name="description" content="声明：本文大部分摘自别处，链接在文末给出。  Flex布局是什么？W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
+<meta name="description" content="声明：本文大部分摘自别处，链接在文末给出。  1.1 Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
 <meta name="keywords" content="htmlcss">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Grid and flexbox">
 <meta property="og:url" content="https://shigithup.github.io/note/2018/undefined28/5c7aade3.html">
 <meta property="og:site_name" content="迷途小书童">
-<meta property="og:description" content="声明：本文大部分摘自别处，链接在文末给出。  Flex布局是什么？W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
+<meta property="og:description" content="声明：本文大部分摘自别处，链接在文末给出。  1.1 Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img1.doubanio.com/view/subject/l/public/s2141208.jpg">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5138806-150965ba6c5b61e6.gif?imageMogr2/auto-orient/strip">
-<meta property="og:updated_time" content="2018-04-28T02:53:49.635Z">
+<meta property="og:updated_time" content="2018-04-28T02:59:44.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Grid and flexbox">
-<meta name="twitter:description" content="声明：本文大部分摘自别处，链接在文末给出。  Flex布局是什么？W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:description" content="声明：本文大部分摘自别处，链接在文末给出。  1.1 Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。Flex布局基本概念">
+<meta name="twitter:image" content="https://img1.doubanio.com/view/subject/l/public/s2141208.jpg">
 
 
 
@@ -375,7 +376,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T10:53:49+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T10:59:44+08:00">
                 2018-04-28
               </time>
             
@@ -445,9 +446,9 @@
         <blockquote>
 <p><strong>声明：</strong>本文大部分摘自别处，链接在文末给出。</p>
 </blockquote>
-<p>Flex布局是什么？<br>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
+<h3 id="1-1-Flex布局"><a href="#1-1-Flex布局" class="headerlink" title="1.1 Flex布局"></a>1.1 Flex布局</h3><p>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
 <p>适用范围<br>弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。<br>Flex布局基本概念</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://img1.doubanio.com/view/subject/l/public/s2141208.jpg" alt=""><br><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/5138806-150965ba6c5b61e6.gif?imageMogr2/auto-orient/strip" alt=""></p>
 
       
@@ -562,8 +563,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -649,6 +659,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Flex布局"><span class="nav-text">1.1 Flex布局</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
