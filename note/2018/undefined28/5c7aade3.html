@@ -117,19 +117,24 @@
 
 
 
-<meta name="description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。 1.1 Flex布局基本概念 弹性">
+<meta name="description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局Flex 是 Flexible Box 的缩写，意为”弹性布局”。W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的">
 <meta name="keywords" content="htmlcss">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Grid and flexbox">
 <meta property="og:url" content="https://shigithup.github.io/note/2018/undefined28/5c7aade3.html">
 <meta property="og:site_name" content="迷途小书童">
-<meta property="og:description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。 1.1 Flex布局基本概念 弹性">
+<meta property="og:description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局Flex 是 Flexible Box 的缩写，意为”弹性布局”。W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-04-28T03:16:56.991Z">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/162650173.PNG">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/162916843.PNG">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/163122681.PNG">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/163318721.PNG">
+<meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180428/164436793.PNG">
+<meta property="og:updated_time" content="2018-04-28T08:50:52.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Grid and flexbox">
-<meta name="twitter:description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。 1.1 Flex布局基本概念 弹性">
+<meta name="twitter:description" content="声明：本文大部分摘自别处，链接在文末给出。  1. Flex布局Flex 是 Flexible Box 的缩写，意为”弹性布局”。W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。 适用范围弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -374,7 +379,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T11:16:56+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T16:50:52+08:00">
                 2018-04-28
               </time>
             
@@ -444,11 +449,14 @@
         <blockquote>
 <p><strong>声明：</strong>本文大部分摘自别处，链接在文末给出。</p>
 </blockquote>
-<h3 id="1-Flex布局"><a href="#1-Flex布局" class="headerlink" title="1. Flex布局"></a>1. Flex布局</h3><p>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
+<h3 id="1-Flex布局"><a href="#1-Flex布局" class="headerlink" title="1. Flex布局"></a>1. Flex布局</h3><p>Flex 是 Flexible Box 的缩写，意为”弹性布局”。<br>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
 <p>适用范围<br>弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。</p>
 <h4 id="1-1-Flex布局基本概念"><a href="#1-1-Flex布局基本概念" class="headerlink" title="1.1 Flex布局基本概念"></a>1.1 Flex布局基本概念</h4><p><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p><strong>弹性容器(Flex container)</strong></p>
 <p>通过设置 <code>display</code> 属性的值为 <code>flex</code> 或 <code>inline-flex</code>来定义弹性容器。</p>
+<blockquote>
+<p>就像<code>block</code>and<code>inline-block</code>作用于描绘对象，对于其子元素当然不会有效果。</p>
+</blockquote>
 <p><strong>弹性项目(Flex item)</strong></p>
 <p>弹性容器里子元素自动成为弹性项目，并且弹性项目的<code>float</code>、<code>clear</code>和<code>vertical-align</code>属性将失效。</p>
 <p><strong>轴(Axis)</strong></p>
@@ -467,7 +475,7 @@
 <li>align-content</li>
 </ul>
 </blockquote>
-<h5 id="1-2-1-flex-direction"><a href="#1-2-1-flex-direction" class="headerlink" title="1.2.1 flex-direction"></a>1.2.1 flex-direction</h5><p>flex-direction决定主轴方向，默认情况下，元素都是从左到右地分布在主轴上</p>
+<p><strong>flex-direction</strong>决定主轴方向，默认情况下，元素都是从左到右地分布在主轴上</p>
 <p>4个取值：</p>
 <blockquote>
 <p>flex-direction: row | row-reverse | column | column-reverse;</p>
@@ -476,6 +484,18 @@
 row-reverse：主轴为水平方向，起点在右端。
 column：主轴为垂直方向，起点在上沿。
 column-reverse：主轴为垂直方向，起点在下沿。
+依次如下图：
+</code></pre><p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/162650173.PNG" alt="mark"><br><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/162916843.PNG" alt="mark"><br><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/163122681.PNG" alt="mark"><br><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/163318721.PNG" alt="mark"></p>
+<p><strong>flex-wrap</strong><br>是否可以换行（默认不换行），以及如果可以换行，如何排列</p>
+<pre><code>3个取值
+flex-wrap: nowrap | wrap | wrap-reverse;
+nowrap: 默认不换行
+wrap: 可以多行，第一行在上方
+wrap-reverse: 可以多行，第一行在下方
+</code></pre><p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/164436793.PNG" alt="mark"></p>
+<p><strong>flex-flow</strong></p>
+<p>flex-direction 和 flex-wrap 的简写,默认row nowrap</p>
+<pre><code>flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;
 </code></pre>
       
     </div>
@@ -695,7 +715,7 @@ column-reverse：主轴为垂直方向，起点在下沿。
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Flex布局"><span class="nav-text">1. Flex布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-Flex布局基本概念"><span class="nav-text">1.1 Flex布局基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-Flex容器属性"><span class="nav-text">1.2 Flex容器属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-1-flex-direction"><span class="nav-text">1.2.1 flex-direction</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Flex布局"><span class="nav-text">1. Flex布局</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-Flex布局基本概念"><span class="nav-text">1.1 Flex布局基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-Flex容器属性"><span class="nav-text">1.2 Flex容器属性</span></a></li></ol></li></ol></div>
             
 
           </div>
