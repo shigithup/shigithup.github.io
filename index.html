@@ -342,7 +342,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/note/2018/undefined28/5c7aade3.html" itemprop="url">Grid and flexbox</a></h1>
+                <a class="post-title-link" href="/note/2018/undefined28/5c7aade3.html" itemprop="url">弹性布局（flex）</a></h1>
         
 
         <div class="post-meta">
@@ -370,8 +370,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-28T18:47:02+08:00">
-                2018-04-28
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-30T11:30:50+08:00">
+                2018-04-30
               </time>
             
           </span>
@@ -406,7 +406,7 @@
 
           
           
-             <span id="/note/2018/undefined28/5c7aade3.html" class="leancloud_visitors" data-flag-title="Grid and flexbox">
+             <span id="/note/2018/undefined28/5c7aade3.html" class="leancloud_visitors" data-flag-title="弹性布局（flex）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -438,89 +438,15 @@
 
       
         
-          
-            <blockquote>
-<p><strong>声明：</strong>本文大部分摘自别处，链接在文末给出。</p>
-</blockquote>
-<h3 id="1-Flex布局"><a href="#1-Flex布局" class="headerlink" title="1. Flex布局"></a>1. Flex布局</h3><p>Flex 是 Flexible Box 的缩写，意为”弹性布局”。<br>W3C针对布局设计的新标准，相对float和position会更加灵活处理父元素和子元素之间布局关系，让布局更加直观和灵活简单。有效的针对不同屏幕宽度大小的情况下，让元素自动有效合理处理布局结构。</p>
-<p>适用范围<br>弹性盒子布局主要适用于应用程序的组件及小规模的布局，而（新兴的）栅格布局则针对大规模的布局。</p>
-<h4 id="1-1-Flex布局基本概念"><a href="#1-1-Flex布局基本概念" class="headerlink" title="1.1 Flex布局基本概念"></a>1.1 Flex布局基本概念</h4><p><img src="http://upload-images.jianshu.io/upload_images/5138806-07a31a6debb07b84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><strong>弹性容器(Flex container)</strong></p>
-<p>通过设置 <code>display</code> 属性的值为 <code>flex</code> 或 <code>inline-flex</code>来定义弹性容器。</p>
-<blockquote>
-<p>就像<code>block</code>and<code>inline-block</code>作用于描绘对象，对于其子元素当然不会有效果。</p>
-</blockquote>
-<p><strong>弹性项目(Flex item)</strong></p>
-<p>弹性容器里子元素自动成为弹性项目，并且弹性项目的<code>float</code>、<code>clear</code>和<code>vertical-align</code>属性将失效。</p>
-<p><strong>轴(Axis)</strong></p>
-<ul>
-<li>主轴（main axis）</li>
-<li>交叉轴（cross axis）</li>
-</ul>
-<p>这个2个轴决定了容器里的项目整体布局效</p>
-<h4 id="1-2-Flex容器属性"><a href="#1-2-Flex容器属性" class="headerlink" title="1.2 Flex容器属性"></a>1.2 Flex容器属性</h4><blockquote>
-<ul>
-<li>flex-direction</li>
-<li>flex-wrap</li>
-<li>flex-flow</li>
-<li>justify-content</li>
-<li>align-items</li>
-<li>align-content</li>
-</ul>
-</blockquote>
-<p><strong>flex-direction</strong>决定主轴方向，默认情况下，元素都是从左到右地分布在主轴上</p>
-<p>4个取值：</p>
-<blockquote>
-<p>flex-direction: row | row-reverse | column | column-reverse;</p>
-</blockquote>
-<pre><code>row（默认值）：主轴为水平方向，起点在左端。
-row-reverse：主轴为水平方向，起点在右端。
-column：主轴为垂直方向，起点在上沿。
-column-reverse：主轴为垂直方向，起点在下沿。
-依次如下图：
-</code></pre><p> <img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/165638308.PNG" alt="mark"></p>
-<p><strong>flex-wrap</strong><br>是否可以换行（默认不换行），以及如果可以换行，如何排列</p>
-<pre><code>3个取值
-flex-wrap: nowrap | wrap | wrap-reverse;
-nowrap: 默认不换行
-wrap: 可以多行，第一行在上方
-wrap-reverse: 可以多行，第一行在下方
-</code></pre><p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/164436793.PNG" alt="mark"></p>
-<p><strong>flex-flow</strong></p>
-<p>flex-direction 和 flex-wrap 的简写,默认row nowrap</p>
-<pre><code>flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;
-</code></pre><p><strong>justify-content</strong>属性定义了项目在主轴上的对齐方式。</p>
-<p>.box {<br>  justify-content: flex-start | flex-end | center | space-between | space-around;<br>}</p>
-<p>它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。</p>
-<blockquote>
-<p>flex-start（默认值）：左对齐</p>
-<p>flex-end：右对齐</p>
-<p>center： 居中</p>
-<p>space-between：两端对齐，项目之间的间隔都相等。</p>
-<p>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</p>
-</blockquote>
-<p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180428/171139072.png" alt="mark"></p>
-<p><strong>align-items</strong></p>
-<p>决定交叉轴的对齐方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">align-items: flex-start | flex-end | center | baseline | stretch;</span><br><span class="line"></span><br><span class="line">flex-start: 交叉轴起点对齐</span><br><span class="line">flex-end: 交叉轴终点对齐</span><br><span class="line">center: 交叉轴居中对齐</span><br><span class="line">baseline: 第一行文字的底部对齐</span><br><span class="line">stretch: （默认）如果项目木有设置高度或者高度为auto,那么项目拉伸充满整个交叉轴空间</span><br></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/5138806-ec26abbafb5f9156.gif?imageMogr2/auto-orient/strip" alt=""></p>
-<p>注意：记住<code>justify-content</code>是沿着主轴的，<code>align-items</code>是沿着交叉轴的，而<code>flex-direction</code>是转换主轴的。这对整体移动元素很关键。</p>
-<p> <strong>align-content属性</strong></p>
-<p><code>align-content</code>属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
-<p>该属性可能取6个值。</p>
-<blockquote>
-<ul>
-<li><code>flex-start</code>：与交叉轴的起点对齐。</li>
-<li><code>flex-end</code>：与交叉轴的终点对齐。</li>
-<li><code>center</code>：与交叉轴的中点对齐。</li>
-<li><code>space-between</code>：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
-<li><code>space-around</code>：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
-<li><code>stretch</code>（默认值）：轴线占满整个交叉轴。</li>
-</ul>
-</blockquote>
-<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png" alt=""></p>
-
-          
+          <blockquote>
+<p><strong>声明：</strong>本文大部分摘自别处，链接在文末给出。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/note/2018/undefined28/5c7aade3.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
