@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>https://shigithup.github.io/note/2018/undefined30/7e93ee50.html</loc>
-    <lastmod>2018-05-01T09:08:04.889Z</lastmod>
+    <loc>https://shigithup.github.io/note/2018/undefined13/556216f0.html</loc>
+    <lastmod>2018-05-03T09:04:08.296Z</lastmod>
     <data>
         <display>
-        <title>网格布局（CSS Grid Layout）</title>
-        <pubTime>2018-04-30T07:35:57.000Z</pubTime>
+        <title>读《JavaScript高级程序设计》</title>
+        <pubTime>2018-04-13T11:20:10.000Z</pubTime>
         
-        <tag>htmlcss</tag>
+        <tag>读</tag>
+         
+        <tag>JavaScript</tag>
          
          
            
@@ -25,10 +27,10 @@
     
   <url>
     <loc>https://shigithup.github.io/note/2018/undefined27/50fabfb3.html</loc>
-    <lastmod>2018-04-30T14:19:39.504Z</lastmod>
+    <lastmod>2018-05-03T01:15:06.783Z</lastmod>
     <data>
         <display>
-        <title>读-批判性思维</title>
+        <title>读《批判性思维》</title>
         <pubTime>2018-04-27T13:47:33.000Z</pubTime>
         
         <tag>读</tag>
@@ -39,6 +41,26 @@
            
              
               <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined30/7e93ee50.html</loc>
+    <lastmod>2018-05-01T09:08:04.889Z</lastmod>
+    <data>
+        <display>
+        <title>网格布局（CSS Grid Layout）</title>
+        <pubTime>2018-04-30T07:35:57.000Z</pubTime>
+        
+        <tag>htmlcss</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -176,28 +198,6 @@
         <pubTime>2018-04-11T12:17:25.000Z</pubTime>
         
         <tag>htmlcss</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://shigithup.github.io/note/2018/undefined13/556216f0.html</loc>
-    <lastmod>2018-04-15T00:32:08.514Z</lastmod>
-    <data>
-        <display>
-        <title>读-JavaScript高级程序设计</title>
-        <pubTime>2018-04-13T11:20:10.000Z</pubTime>
-        
-        <tag>读</tag>
-         
-        <tag>JavaScript</tag>
          
          
            
