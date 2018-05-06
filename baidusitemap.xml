@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>https://shigithup.github.io/note/2018/undefined27/50fabfb3.html</loc>
-    <lastmod>2018-05-03T15:04:19.882Z</lastmod>
-    <data>
-        <display>
-        <title>读《批判性思维》</title>
-        <pubTime>2018-04-27T13:47:33.000Z</pubTime>
-        
-        <tag>读</tag>
-         
-        <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://shigithup.github.io/note/2018/undefined13/556216f0.html</loc>
-    <lastmod>2018-05-03T13:37:25.885Z</lastmod>
+    <lastmod>2018-05-06T11:56:42.081Z</lastmod>
     <data>
         <display>
         <title>读《JavaScript高级程序设计》</title>
@@ -41,6 +19,65 @@
            
              
               <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined04/ec13cc6b.html</loc>
+    <lastmod>2018-05-06T07:27:51.850Z</lastmod>
+    <data>
+        <display>
+        <title>关于吃</title>
+        <pubTime>2018-05-04T01:56:57.000Z</pubTime>
+        
+        <tag>知乎</tag>
+         
+        <tag>吃</tag>
+         
+         
+           
+             
+              <breadCrumb title="泛娱乐" url="https://shigithup.github.io/categories/%E6%B3%9B%E5%A8%B1%E4%B9%90/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined06/ff0a3f82.html</loc>
+    <lastmod>2018-05-06T07:27:51.843Z</lastmod>
+    <data>
+        <display>
+        <title>DOM模型</title>
+        <pubTime>2018-05-06T00:58:49.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined27/50fabfb3.html</loc>
+    <lastmod>2018-05-06T05:40:32.358Z</lastmod>
+    <data>
+        <display>
+        <title>读《批判性思维》</title>
+        <pubTime>2018-04-27T13:47:33.000Z</pubTime>
+        
+        <tag>读</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
