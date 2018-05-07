@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://shigithup.github.io/note/2018/undefined13/556216f0.html</loc>
-    <lastmod>2018-05-06T13:44:24.609Z</lastmod>
+    <lastmod>2018-05-07T00:54:10.724Z</lastmod>
     <data>
         <display>
         <title>读《JavaScript高级程序设计》</title>
@@ -19,6 +19,28 @@
            
              
               <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined27/50fabfb3.html</loc>
+    <lastmod>2018-05-06T13:45:21.163Z</lastmod>
+    <data>
+        <display>
+        <title>读《批判性思维》</title>
+        <pubTime>2018-04-27T13:47:33.000Z</pubTime>
+        
+        <tag>读</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
@@ -41,28 +63,6 @@
            
              
               <breadCrumb title="泛娱乐" url="https://shigithup.github.io/categories/%E6%B3%9B%E5%A8%B1%E4%B9%90/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://shigithup.github.io/note/2018/undefined27/50fabfb3.html</loc>
-    <lastmod>2018-05-06T05:40:32.358Z</lastmod>
-    <data>
-        <display>
-        <title>读《批判性思维》</title>
-        <pubTime>2018-04-27T13:47:33.000Z</pubTime>
-        
-        <tag>读</tag>
-         
-        <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
