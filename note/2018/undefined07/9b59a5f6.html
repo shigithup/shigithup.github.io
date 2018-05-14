@@ -106,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="读,JavaScript," />
+  <meta name="keywords" content="读，JavaScript," />
 
 
 
@@ -117,13 +117,13 @@
 
 
 
-<meta name="description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题">
-<meta name="keywords" content="读,JavaScript">
+<meta name="description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
+<meta name="keywords" content="读，JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读《JavaScript高级程序设计》（2）">
 <meta property="og:url" content="https://shigithup.github.io/note/2018/undefined07/9b59a5f6.html">
 <meta property="og:site_name" content="迷途小书童">
-<meta property="og:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题">
+<meta property="og:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/172742584.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/182113261.jpg">
@@ -131,10 +131,10 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-05-14T08:30:30.969Z">
+<meta property="og:updated_time" content="2018-05-14T12:45:41.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
-<meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题">
+<meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
 <meta name="twitter:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/172742584.jpg">
 
 
@@ -379,7 +379,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-14T16:30:30+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-14T20:45:41+08:00">
                 2018-05-14
               </time>
             
@@ -450,6 +450,7 @@
 <p>[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版）</p>
 <p>本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。</p>
 <p>第四章 变量、作用域和内存问题</p>
+<p>第五章  引用类型</p>
 </blockquote>
 <a id="more"></a>
 <h1 id="第四章-变量、作用域和内存问题"><a href="#第四章-变量、作用域和内存问题" class="headerlink" title="第四章 变量、作用域和内存问题"></a>第四章 变量、作用域和内存问题</h1><p>本章内容：</p>
@@ -605,7 +606,7 @@
 <p>下图中男孩女孩为类，而具体的每个人为该类的对象：</p>
 <p><img src="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg" alt="mark"></p>
 <p>参考链接：<a href="http://www.runoob.com/java/java-object-classes.html" target="_blank" rel="noopener">Java 对象和类</a></p>
-<h1 id="5-1-Object-类型"><a href="#5-1-Object-类型" class="headerlink" title="5.1  Object 类型"></a>5.1  Object 类型</h1><p>对象就是一组“键值对”（key-value，键名和键值）的集合，是一种无序的复合数据集合。</p>
+<h1 id="5-1-Object-类型"><a href="#5-1-Object-类型" class="headerlink" title="5.1 Object 类型"></a>5.1 Object 类型</h1><p>对象就是一组“键值对”（key-value，键名和键值）的集合，是一种无序的复合数据集合。</p>
 <p>对象的所有键名都是字符串（ES6 又引入了 Symbol 值也可以作为键值），所以加不加引号都可以。但是如果键名不符合标识名的条件（比如第一个字符为数字，或者含有空格或运算符），且也不是数字，则必须加上引号，否则会报错。</p>
 <p>它的“键值”可以是任何数据类型。如果一个属性的值为函数，通常把这个属性称为“方法”，它可以像函数那样调用。如果属性的值还是一个对象，就形成了链式引用。</p>
 <h2 id="创建Object实例的方法有两种。"><a href="#创建Object实例的方法有两种。" class="headerlink" title="创建Object实例的方法有两种。"></a>创建Object实例的方法有两种。</h2><p>第一种是使用new操作符后跟Object构造函数，如下所示：</p>
@@ -625,7 +626,7 @@
 <p>上面代码中，对象obj继承了toString属性，该属性不会被for…in循环遍历到，因为它默认是“不可遍历”的。 </p>
 <p>如果继承的属性是可遍历的，那么就会被for…in循环遍历到。但是，一般情况下，都是只想遍历对象自身的属性，所以使用for…in的时候，应该结合使用hasOwnProperty方法，在循环内部判断一下，某个属性是否为对象自身的属性。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var person = &#123; name: &apos;老张&apos; &#125;;</span><br><span class="line">for (var key in person) &#123;</span><br><span class="line">  if (person.hasOwnProperty(key)) &#123;</span><br><span class="line">    console.log(key);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">// name</span><br></pre></td></tr></table></figure>
-<h1 id="5-2-Array-类型"><a href="#5-2-Array-类型" class="headerlink" title="5.2  Array  类型"></a>5.2  Array  类型</h1><p>数组（array）是按次序排列的一组值。每个值的位置都有编号（从0开始），整个数组用方括号表示。任何类型的数据，都可以放入数组。</p>
+<h1 id="5-2-Array-类型"><a href="#5-2-Array-类型" class="headerlink" title="5.2 Array  类型"></a>5.2 Array  类型</h1><p>数组（array）是按次序排列的一组值。每个值的位置都有编号（从0开始），整个数组用方括号表示。任何类型的数据，都可以放入数组。</p>
 <p>如果数组的元素还是数组，就形成了多维数组。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]];</span><br><span class="line">a[<span class="number">0</span>][<span class="number">1</span>] <span class="comment">// 2</span></span><br><span class="line">a[<span class="number">1</span>][<span class="number">1</span>] <span class="comment">// 4</span></span><br></pre></td></tr></table></figure>
 <p>本质上，数组属于一种特殊的对象。typeof运算符会返回数组的类型是object。</p>
@@ -998,6 +999,189 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> regex = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'xyz'</span>, <span class="string">'i'</span>);</span><br><span class="line"><span class="comment">// 等价于</span></span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/xyz/i</span>;</span><br></pre></td></tr></table></figure>
 <p>两种方法的不同之处在于：<br>字面量，<u>在加载脚本后</u>，正则表达式字面值提供正则表达式的编译（又引擎编译）。当正则表达式保持不变时，使用此方法可获得更好的性能。</p>
 <p>使用构造函数提供正则表达式的<u>运行时</u>编译。使用构造函数，当你知道正则表达式模式将会改变，或者你不知道模式，并从另一个来源，如用户输入。</p>
+<h2 id="方括号"><a href="#方括号" class="headerlink" title="方括号"></a>方括号</h2><p>方括号用于查找某个范围内的字符：</p>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_charset.asp" target="_blank" rel="noopener">[abc]</a></td>
+<td>查找方括号之间的任何字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_charset_not.asp" target="_blank" rel="noopener">[^abc]</a></td>
+<td>查找任何不在方括号之间的字符。</td>
+</tr>
+<tr>
+<td>[0-9]</td>
+<td>查找任何从 0 至 9 的数字。</td>
+</tr>
+<tr>
+<td>[a-z]</td>
+<td>查找任何从小写 a 到小写 z 的字符。</td>
+</tr>
+<tr>
+<td>[A-Z]</td>
+<td>查找任何从大写 A 到大写 Z 的字符。</td>
+</tr>
+<tr>
+<td>[A-z]</td>
+<td>查找任何从大写 A 到小写 z 的字符。</td>
+</tr>
+<tr>
+<td>[adgk]</td>
+<td>查找给定集合内的任何字符。</td>
+</tr>
+<tr>
+<td>[^adgk]</td>
+<td>查找给定集合外的任何字符。</td>
+</tr>
+<tr>
+<td>(red\</td>
+<td>blue\</td>
+<td>green)</td>
+<td>查找任何指定的选项。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><p>元字符（Metacharacter）是拥有特殊含义的字符：</p>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_dot.asp" target="_blank" rel="noopener">.</a></td>
+<td>查找单个字符，除了换行和行结束符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_wordchar.asp" target="_blank" rel="noopener">\w</a></td>
+<td>查找单词字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_wordchar_non.asp" target="_blank" rel="noopener">\W</a></td>
+<td>查找非单词字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_digit.asp" target="_blank" rel="noopener">\d</a></td>
+<td>查找数字。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_digit_non.asp" target="_blank" rel="noopener">\D</a></td>
+<td>查找非数字字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_whitespace.asp" target="_blank" rel="noopener">\s</a></td>
+<td>查找空白字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_whitespace_non.asp" target="_blank" rel="noopener">\S</a></td>
+<td>查找非空白字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_begin.asp" target="_blank" rel="noopener">\b</a></td>
+<td>匹配单词边界。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_begin_not.asp" target="_blank" rel="noopener">\B</a></td>
+<td>匹配非单词边界。</td>
+</tr>
+<tr>
+<td>\0</td>
+<td>查找 NUL 字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_newline.asp" target="_blank" rel="noopener">\n</a></td>
+<td>查找换行符。</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>查找换页符。</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>查找回车符。</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>查找制表符。</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>查找垂直制表符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_octal.asp" target="_blank" rel="noopener">\xxx</a></td>
+<td>查找以八进制数 xxx 规定的字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_hex.asp" target="_blank" rel="noopener">\xdd</a></td>
+<td>查找以十六进制数 dd 规定的字符。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_unicode_hex.asp" target="_blank" rel="noopener">\uxxxx</a></td>
+<td>查找以十六进制数 xxxx 规定的 Unicode 字符。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h2><table>
+<thead>
+<tr>
+<th>量词</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_onemore.asp" target="_blank" rel="noopener">n+</a></td>
+<td>匹配任何包含至少一个 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_zeromore.asp" target="_blank" rel="noopener">n*</a></td>
+<td>匹配任何包含零个或多个 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_zeroone.asp" target="_blank" rel="noopener">n?</a></td>
+<td>匹配任何包含零个或一个 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_nx.asp" target="_blank" rel="noopener">n{X}</a></td>
+<td>匹配包含 X 个 n 的序列的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_nxy.asp" target="_blank" rel="noopener">n{X,Y}</a></td>
+<td>匹配包含 X 至 Y 个 n 的序列的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_nxcomma.asp" target="_blank" rel="noopener">n{X,}</a></td>
+<td>匹配包含至少 X 个 n 的序列的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_ndollar.asp" target="_blank" rel="noopener">n$</a></td>
+<td>匹配任何结尾为 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_ncaret.asp" target="_blank" rel="noopener">^n</a></td>
+<td>匹配任何开头为 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_nfollow.asp" target="_blank" rel="noopener">?=n</a></td>
+<td>匹配任何其后紧接指定字符串 n 的字符串。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/jsref_regexp_nfollow_not.asp" target="_blank" rel="noopener">?!n</a></td>
+<td>匹配任何其后没有紧接指定字符串 n 的字符串。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">初步熟悉正则</a></p>
 <h2 id="5-4-1-RegExp-实例属性"><a href="#5-4-1-RegExp-实例属性" class="headerlink" title="5.4.1 RegExp 实例属性"></a>5.4.1 RegExp 实例属性</h2><ul>
 <li>ignoreCase：返回一个布尔值，表示是否设置了i标志。</li>
 <li>global：返回一个布尔值，表示是否设置了g标志。</li>
@@ -1011,7 +1195,21 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text = <span class="string">"mom and dad and baby"</span>;</span><br><span class="line"><span class="keyword">var</span> pattern = <span class="regexp">/mom( and dad( and baby)?)?/gi</span>;</span><br><span class="line">                   </span><br><span class="line"><span class="keyword">var</span> matches = pattern.exec(text);</span><br><span class="line">matches；<span class="comment">//["mom and dad and baby", " and dad and baby", " and baby", index: 0, input: "mom and dad and baby", groups: undefined]</span></span><br><span class="line">alert(matches.index);    <span class="comment">//0</span></span><br><span class="line">alert(matches.input);    <span class="comment">//"mom and dad and baby"</span></span><br><span class="line">alert(matches[<span class="number">0</span>]);       <span class="comment">//"mom and dad and baby"</span></span><br><span class="line">alert(matches[<span class="number">1</span>]);       <span class="comment">//" and dad and baby"</span></span><br><span class="line">alert(matches[<span class="number">2</span>]);       <span class="comment">//" and baby"</span></span><br></pre></td></tr></table></figure>
 <p>需要注意的是，使用 exec() 方法，即使在正则表达式中设置了全局模式（g 标志），它也只会返回字符串中的第一个匹配项。区别在于，不设置全局模式的情况下，在同一个字符串上调用多次 exec() 将始终返回第一个匹配项的信息。而设置了全局模式后，在同一个字符串上调用多次 exec() 方法将会在之前查找完的位置继续向下查找新的匹配项。例如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text = <span class="string">"cat, bat, sat, fat"</span>;        </span><br><span class="line"><span class="keyword">var</span> pattern1 = <span class="regexp">/.at/</span>;  <span class="comment">//'.'匹配除换行符之外的任何单个字符。</span></span><br><span class="line">                   </span><br><span class="line"><span class="keyword">var</span> matches = pattern1.exec(text);   </span><br><span class="line">matches; <span class="comment">//["cat", index: 0, input: "cat, bat, sat, fat", groups: undefined]</span></span><br><span class="line">alert(matches.index);        <span class="comment">//0</span></span><br><span class="line">alert(matches[<span class="number">0</span>]);           <span class="comment">//cat</span></span><br><span class="line">alert(pattern1.lastIndex);   <span class="comment">//0</span></span><br><span class="line">                   </span><br><span class="line">matches = pattern1.exec(text);        </span><br><span class="line">alert(matches.index);        <span class="comment">//0</span></span><br><span class="line">alert(matches[<span class="number">0</span>]);           <span class="comment">//cat</span></span><br><span class="line">alert(pattern1.lastIndex);   <span class="comment">//0</span></span><br><span class="line">                   </span><br><span class="line"><span class="keyword">var</span> pattern2 = <span class="regexp">/.at/g</span>;</span><br><span class="line">                   </span><br><span class="line"><span class="keyword">var</span> matches = pattern2.exec(text);    </span><br><span class="line">alert(matches.index);        <span class="comment">//0</span></span><br><span class="line">alert(matches[<span class="number">0</span>]);           <span class="comment">//cat</span></span><br><span class="line">alert(pattern2.lastIndex);   <span class="comment">//0</span></span><br><span class="line">                   </span><br><span class="line">matches = pattern2.exec(text);        </span><br><span class="line">alert(matches.index);</span><br><span class="line"><span class="comment">//5  "cat, ",bat在字符串的起始位index是6，而输出是5，所以index输出的应是匹配项起始位的前一位，而依次规则第一位的index应该是-1，实际是0，依次此规则对于第一位不适合。</span></span><br><span class="line">alert(matches[<span class="number">0</span>]);           <span class="comment">//bat</span></span><br><span class="line">alert(pattern2.lastIndex);   <span class="comment">//8</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="test"><a href="#test" class="headerlink" title="test()"></a>test()</h3><p>它接受一个字符串参数，在模式与该参数匹配的情况下返回true；否则返回false。在只想知道目标字符串与某个模式是否匹配，但不需要知道其文本内容时，使用这个非常方便，因此test方法经常被用在if语句中，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text = <span class="string">"000-00-0000"</span>;        </span><br><span class="line"><span class="keyword">var</span> pattern = <span class="regexp">/\d&#123;3&#125;-\d&#123;2&#125;-\d&#123;4&#125;/</span>;</span><br><span class="line">                   </span><br><span class="line"><span class="keyword">if</span> (pattern.test(text))&#123;</span><br><span class="line">    alert(<span class="string">"The pattern was matched."</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>支持正则表达式的 String 对象的方法<br>方法    描述<br>search    检索与正则表达式相匹配的值。<br>match    找到一个或多个正则表达式的匹配。<br>replace    替换与正则表达式匹配的子串。<br>split    把字符串分割为字符串数组。</p>
+<h2 id="5-4-3-RegExp-构造函数属性"><a href="#5-4-3-RegExp-构造函数属性" class="headerlink" title="5.4.3 RegExp 构造函数属性"></a>5.4.3 RegExp 构造函数属性</h2><ul>
+<li>input (简写为$_) 最近一次要匹配的字符串。</li>
+<li>lastMatch(简写$&amp;) 最近一次的匹配项</li>
+<li>lastParen(简写$+) 最近一次匹配的捕获组。</li>
+<li>leftContext(简写$`) input字符串中lastMatch之前的文本</li>
+<li>rightContext(简写$’) input字符串中lastMatch之后的文本</li>
+<li>multiline(简写$*) 布尔值，表示是否所有表达式都使用多行模式。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text =<span class="string">"you are in haorooms 博客，看文章呢"</span>;</span><br><span class="line"><span class="keyword">var</span> pattern =<span class="regexp">/(.)aorooms/g</span>;</span><br><span class="line"><span class="keyword">if</span>(pattern.test(text))&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$_); <span class="comment">//you are in haorooms 博客，看文章呢</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$`"</span>]);<span class="comment">//you are in</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$'"</span>]);<span class="comment">//博客，看文章呢</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$&amp;"</span>]);<span class="comment">//haorooms</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$+"</span>]);<span class="comment">//h</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$*"</span>]);<span class="comment">//false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>除了上面几个属性之外还有 （RegExp.$1,RegExp.$2,RegExp.$3,RegExp.$4,RegExp.$5,RegExp.$6,RegExp.$7,RegExp.$8,RegExp.$9）,一共有9个。用来存储匹配的捕获组。在调用<code>exec()</code>或<code>test()</code>方法时，这些属性会被自动填充。其实，说简单的，就是可以获得（）括号内匹配的字符串。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text =<span class="string">"you are in haorooms 博客，看文章呢"</span>;</span><br><span class="line"><span class="keyword">var</span> pattern =<span class="regexp">/(.)ao(..)om(.)/g</span>;</span><br><span class="line"><span class="keyword">if</span>(pattern.test(text))&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">1</span>);<span class="comment">//h</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">2</span>);<span class="comment">//ro</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">3</span>);<span class="comment">//s</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="5-5-Function-类型"><a href="#5-5-Function-类型" class="headerlink" title="5.5 Function 类型"></a>5.5 Function 类型</h1>
       
     </div>
     
@@ -1039,9 +1237,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/读/" rel="tag"># 读</a>
-          
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/读，JavaScript/" rel="tag"># 读，JavaScript</a>
           
         </div>
       
@@ -1177,7 +1373,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1232,7 +1428,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-变量、作用域和内存问题"><span class="nav-text">第四章 变量、作用域和内存问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-基本类型和引用类型的值"><span class="nav-text">4.1  基本类型和引用类型的值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-1-复制变量值"><span class="nav-text">4.1.1 复制变量值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-2-传递参数"><span class="nav-text">4.1.2 传递参数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-2-执行环境及作用域"><span class="nav-text">4.2 执行环境及作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-1-延长作用域链："><span class="nav-text">4.2.1 延长作用域链：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-2-没有块级作用域"><span class="nav-text">4.2.2 没有块级作用域</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-3-垃圾收集"><span class="nav-text">4.3 垃圾收集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-标记清除"><span class="nav-text">1. 标记清除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-引用计数"><span class="nav-text">2. 引用计数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-4-堆内存与栈内存"><span class="nav-text">4.4 堆内存与栈内存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-引用类型"><span class="nav-text">第五章 引用类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-1-Object-类型"><span class="nav-text">5.1  Object 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Object实例的方法有两种。"><span class="nav-text">创建Object实例的方法有两种。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问对象属性"><span class="nav-text">访问对象属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for…in-循环"><span class="nav-text">for…in 循环</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-2-Array-类型"><span class="nav-text">5.2  Array  类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数组的方式也有两种："><span class="nav-text">创建数组的方式也有两种：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#length-属性"><span class="nav-text">length 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-1-检测数组"><span class="nav-text">5.2.1 检测数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-2-转换方法"><span class="nav-text">5.2.2 转换方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-3-栈方法"><span class="nav-text">5.2.3 栈方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-4-队列方法"><span class="nav-text">5.2.4 队列方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-5-重排序方法"><span class="nav-text">5.2.5  重排序方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-6-操作方法"><span class="nav-text">5.3.6 操作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#concat"><span class="nav-text">concat()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slice"><span class="nav-text">slice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#splice"><span class="nav-text">splice()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-7-位置方法"><span class="nav-text">5.2.7 位置方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-8-迭代方法"><span class="nav-text">5.2.8 迭代方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-9-归并算法"><span class="nav-text">5.2.9 归并算法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-3-Date-类型"><span class="nav-text">5.3 Date 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#静态方法（Date-方法-而不是通过变量名-方法）"><span class="nav-text">静态方法（Date.方法()而不是通过变量名.方法）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Date-parse"><span class="nav-text">1. Date.parse()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Date-UTC"><span class="nav-text">2. Date.UTC()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Date-now"><span class="nav-text">3. Date.now()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例方法"><span class="nav-text">实例方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-4-RegEXp-类型"><span class="nav-text">5.4 RegEXp 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字面量知识点补充"><span class="nav-text">字面量知识点补充</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-1-RegExp-实例属性"><span class="nav-text">5.4.1 RegExp 实例属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-2-实例方法"><span class="nav-text">5.4.2  实例方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#exec（）"><span class="nav-text">exec（）</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-变量、作用域和内存问题"><span class="nav-text">第四章 变量、作用域和内存问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-基本类型和引用类型的值"><span class="nav-text">4.1  基本类型和引用类型的值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-1-复制变量值"><span class="nav-text">4.1.1 复制变量值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-2-传递参数"><span class="nav-text">4.1.2 传递参数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-2-执行环境及作用域"><span class="nav-text">4.2 执行环境及作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-1-延长作用域链："><span class="nav-text">4.2.1 延长作用域链：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-2-没有块级作用域"><span class="nav-text">4.2.2 没有块级作用域</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-3-垃圾收集"><span class="nav-text">4.3 垃圾收集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-标记清除"><span class="nav-text">1. 标记清除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-引用计数"><span class="nav-text">2. 引用计数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-4-堆内存与栈内存"><span class="nav-text">4.4 堆内存与栈内存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-引用类型"><span class="nav-text">第五章 引用类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-1-Object-类型"><span class="nav-text">5.1 Object 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Object实例的方法有两种。"><span class="nav-text">创建Object实例的方法有两种。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#访问对象属性"><span class="nav-text">访问对象属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for…in-循环"><span class="nav-text">for…in 循环</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-2-Array-类型"><span class="nav-text">5.2 Array  类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数组的方式也有两种："><span class="nav-text">创建数组的方式也有两种：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#length-属性"><span class="nav-text">length 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-1-检测数组"><span class="nav-text">5.2.1 检测数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-2-转换方法"><span class="nav-text">5.2.2 转换方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-3-栈方法"><span class="nav-text">5.2.3 栈方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-4-队列方法"><span class="nav-text">5.2.4 队列方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-5-重排序方法"><span class="nav-text">5.2.5  重排序方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-6-操作方法"><span class="nav-text">5.3.6 操作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#concat"><span class="nav-text">concat()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slice"><span class="nav-text">slice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#splice"><span class="nav-text">splice()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-7-位置方法"><span class="nav-text">5.2.7 位置方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-8-迭代方法"><span class="nav-text">5.2.8 迭代方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-9-归并算法"><span class="nav-text">5.2.9 归并算法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-3-Date-类型"><span class="nav-text">5.3 Date 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#静态方法（Date-方法-而不是通过变量名-方法）"><span class="nav-text">静态方法（Date.方法()而不是通过变量名.方法）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Date-parse"><span class="nav-text">1. Date.parse()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Date-UTC"><span class="nav-text">2. Date.UTC()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Date-now"><span class="nav-text">3. Date.now()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例方法"><span class="nav-text">实例方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-4-RegEXp-类型"><span class="nav-text">5.4 RegEXp 类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字面量知识点补充"><span class="nav-text">字面量知识点补充</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方括号"><span class="nav-text">方括号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元字符"><span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#量词"><span class="nav-text">量词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-1-RegExp-实例属性"><span class="nav-text">5.4.1 RegExp 实例属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-2-实例方法"><span class="nav-text">5.4.2  实例方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#exec（）"><span class="nav-text">exec（）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#test"><span class="nav-text">test()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4-3-RegExp-构造函数属性"><span class="nav-text">5.4.3 RegExp 构造函数属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-5-Function-类型"><span class="nav-text">5.5 Function 类型</span></a></li></ol></div>
             
 
           </div>
