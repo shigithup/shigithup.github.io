@@ -117,20 +117,20 @@
 
 
 
-<meta name="description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。">
+<meta name="description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第一章 JavaScript简介 第二章 在HTML中使用JavaScript 第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）">
 <meta name="keywords" content="读,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读《JavaScript高级程序设计》（1）">
 <meta property="og:url" content="https://shigithup.github.io/note/2018/undefined13/556216f0.html">
 <meta property="og:site_name" content="迷途小书童">
-<meta property="og:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。">
+<meta property="og:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第一章 JavaScript简介 第二章 在HTML中使用JavaScript 第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/084823261.png">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/091628457.jpg">
-<meta property="og:updated_time" content="2018-05-07T01:40:34.327Z">
+<meta property="og:updated_time" content="2018-05-10T07:32:15.137Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（1）">
-<meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。">
+<meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第一章 JavaScript简介 第二章 在HTML中使用JavaScript 第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）">
 <meta name="twitter:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/084823261.png">
 
 
@@ -375,8 +375,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-07T09:40:34+08:00">
-                2018-05-07
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-10T15:32:15+08:00">
+                2018-05-10
               </time>
             
           </span>
@@ -445,6 +445,9 @@
         <blockquote>
 <p>[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版）</p>
 <p>本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。</p>
+<p>第一章 JavaScript简介</p>
+<p>第二章 在HTML中使用JavaScript</p>
+<p>第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）</p>
 </blockquote>
 <a id="more"></a>
 <h1 id="第一章-JavaScript简介"><a href="#第一章-JavaScript简介" class="headerlink" title="第一章 JavaScript简介"></a>第一章 JavaScript简介</h1><h2 id="1-1-JavaScript简史"><a href="#1-1-JavaScript简史" class="headerlink" title="1.1 JavaScript简史"></a>1.1 JavaScript简史</h2><p>由于网页的大小和复杂性不断增加以及网速的限制。为完成简单的表单验证（是否没有填写某个必填项，是否输入了无效的值）而频繁地与服务器交换数据只会加重用户的负担，为此，1995年当时就职于Netscape公司的Brendan Eich为Netscape Navigator开发了一种名为<code>LiveScript</code>的脚本语言–该语言可同时在浏览器的与服务器中使用（仅在客户端就可以完成简单的验证），为了搭上热炒Java的顺风车，改名为<code>JavaScript</code>。</p>
@@ -545,7 +548,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a;</span><br><span class="line">console.log(a);</span><br><span class="line">a = 1;</span><br></pre></td></tr></table></figure>
 <p><del>最后的结果是显示<code>undefined</code>，表示变量<code>a</code>已声明，但还未赋值。</del></p>
 <p>刚在谷歌浏览器控制台测试，上面代码块1，结果是显示<code>undefined</code>， 2结果为1。火狐中代码块1，2结果都为1。是否可以认为，js引擎更智能了？？</p>
-<h2 id="3-4-数据类型"><a href="#3-4-数据类型" class="headerlink" title="3.4 数据类型"></a>3.4 数据类型</h2><p>JavaScript 的数据类型，共有六种。（ES6 又新增了第七种 Symbol 类型的值，本教程不涉及。）</p>
+<h2 id="3-4-数据类型"><a href="#3-4-数据类型" class="headerlink" title="3.4 数据类型"></a>3.4 数据类型</h2><p>JavaScript 的数据类型，共有六种。可分为两类：（ES6 又新增了第七种 Symbol 类型的值，本教程不涉及。）</p>
+<p>基础类型又叫原始值，复杂类型又叫对象值。（所以为从英文翻译过来对于理解就是麻烦事）</p>
 <ul>
 <li>数值（number）：整数和小数（比如<code>1</code>和<code>3.14</code>）</li>
 <li>字符串（string）：文本（比如<code>Hello World</code>）。</li>
