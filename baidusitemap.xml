@@ -4,15 +4,44 @@
 
     
   <url>
-    <loc>https://shigithup.github.io/note/2018/undefined16/0.html</loc>
-    <lastmod>2018-05-18T03:28:48.126Z</lastmod>
+    <loc>https://shigithup.github.io/note/2018/undefined16/23e5c293.html</loc>
+    <lastmod>2018-05-19T00:48:26.494Z</lastmod>
     <data>
         <display>
-        <title></title>
-        <pubTime>2018-05-16T01:42:31.138Z</pubTime>
+        <title>读《JavaScript高级程序设计》（3）</title>
+        <pubTime>2018-05-16T01:42:31.000Z</pubTime>
         
+        <tag>读</tag>
+         
+        <tag>JavaScript</tag>
+         
          
            
+             
+              <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://shigithup.github.io/note/2018/undefined06/b85ac64d.html</loc>
+    <lastmod>2018-05-19T00:44:43.353Z</lastmod>
+    <data>
+        <display>
+        <title>读《影响力》</title>
+        <pubTime>2018-04-06T12:38:16.000Z</pubTime>
+        
+        <tag>读</tag>
+         
+        <tag>工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
+          
         </display>
     </data>
     </url>
@@ -202,28 +231,6 @@
            
              
               <breadCrumb title="前端" url="https://shigithup.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://shigithup.github.io/note/2018/undefined06/b85ac64d.html</loc>
-    <lastmod>2018-04-27T15:01:18.781Z</lastmod>
-    <data>
-        <display>
-        <title>读《影响力》</title>
-        <pubTime>2018-04-06T12:38:16.000Z</pubTime>
-        
-        <tag>读</tag>
-         
-        <tag>工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="文学" url="https://shigithup.github.io/categories/%E6%96%87%E5%AD%A6/"/>
           
         </display>
     </data>
