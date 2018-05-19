@@ -127,7 +127,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/084823261.png">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/091628457.jpg">
-<meta property="og:updated_time" content="2018-05-10T07:32:15.137Z">
+<meta property="og:updated_time" content="2018-05-19T05:59:16.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（1）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第一章 JavaScript简介 第二章 在HTML中使用JavaScript 第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）">
@@ -375,8 +375,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-10T15:32:15+08:00">
-                2018-05-10
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-19T13:59:16+08:00">
+                2018-05-19
               </time>
             
           </span>
@@ -581,7 +581,7 @@
 <p>对象返回<code>object</code>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">typeof window // &quot;object&quot;</span><br><span class="line">typeof &#123;&#125; // &quot;object&quot;</span><br><span class="line">typeof [] // &quot;object&quot;</span><br></pre></td></tr></table></figure>
 <p>上面代码中，空数组（<code>[]</code>）的类型也是<code>object</code>，这表示在 JavaScript 内部，数组本质上只是一种特殊的对象。这里顺便提一下，<code>instanceof</code>运算符可以区分数组和对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"></span><br><span class="line">o <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// false</span></span><br><span class="line">a <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> o = &#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"></span><br><span class="line">o <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// false  验证o是不是数组</span></span><br><span class="line">a <span class="keyword">instanceof</span> <span class="built_in">Array</span> <span class="comment">// true  验证a是不是数组</span></span><br></pre></td></tr></table></figure>
 <h3 id="3-4-2-null-和-undefined"><a href="#3-4-2-null-和-undefined" class="headerlink" title="3.4.2 null 和 undefined"></a>3.4.2 null 和 undefined</h3><p><code>undefined</code> 类型只有一个值，即特殊的<code>undefined</code>。在使用<code>var</code>声明变量但未对其加以初始化时，这个变量的值就是<code>undefined</code>。 声明并未加以初始化与尚未定义即未声明且未初始化的变量是不一样的。</p>
 <p><code>null</code>也是只有一个值的数据类型，这个特殊值时<code>null</code>.从逻辑角度来讲<code>null</code>值表示一个空对象指针。</p>
 <p>如果定义的变量准备在将来用于保存对象，就应该明确的让变量保存<code>null</code>值。然而没有必要把变量的值显示的设为<code>undefined</code>。</p>
