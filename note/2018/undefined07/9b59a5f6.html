@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-05-23T09:08:28.501Z">
+<meta property="og:updated_time" content="2018-05-24T09:50:14.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
@@ -379,8 +379,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-23T17:08:28+08:00">
-                2018-05-23
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-24T17:50:14+08:00">
+                2018-05-24
               </time>
             
           </span>
@@ -525,7 +525,7 @@
 <h2 id="4-2-1-延长作用域链："><a href="#4-2-1-延长作用域链：" class="headerlink" title="4.2.1 延长作用域链："></a>4.2.1 延长作用域链：</h2><p>虽然执行环境只有两种——全局作用域和局部作用域，但是还是可以通过某种方式来延长作用域链。因为有些语句可以在作用域链的顶部增加一个临时的变量对象。<br>有两种情况会发生这种现象：<br>1、try-catch语句的catch块；<br>2、with语句；</p>
 <h2 id="4-2-2-没有块级作用域"><a href="#4-2-2-没有块级作用域" class="headerlink" title="4.2.2 没有块级作用域"></a>4.2.2 没有块级作用域</h2><p>在其他类c语言中由花括号封闭的代码块都有自己的作用域，即js中执行环境。</p>
 <p>任何一对花括号中的语句集都属于一个块，在这之中定义的所有变量在代码块外都是不可见的，我们称之为块级作用域。比如：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> （rtrue）&#123; </span><br><span class="line">	<span class="keyword">var</span> color = <span class="string">"blue"</span>;</span><br><span class="line">&#125;</span><br><span class="line">alert color;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> （<span class="literal">true</span>）&#123; </span><br><span class="line">	<span class="keyword">var</span> color = <span class="string">"blue"</span>;</span><br><span class="line">&#125;</span><br><span class="line">alert color;</span><br></pre></td></tr></table></figure>
 <p>在js中color在外部仍可以访问到，而在有块级作用域的语言中，则访问不到。只有函数后的的代码块才是执行环境。</p>
 <h2 id="4-3-垃圾收集"><a href="#4-3-垃圾收集" class="headerlink" title="4.3 垃圾收集"></a>4.3 垃圾收集</h2><p>内存生命周期</p>
 <p>不管什么程序语言，内存生命周期基本是一致的：   </p>
@@ -1242,6 +1242,7 @@
 <p>在这个重写后的factorial()函数的函数体内，没有再引用函数名factorial。这样，无论引用函数时使用的是什么名字，都可以保证正常完成递归调用。例如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> trueFactorial = factorial;</span><br><span class="line"></span><br><span class="line">factorial = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;&#125;;</span><br><span class="line">	</span><br><span class="line">alert(trueFactorial(<span class="number">5</span>)); <span class="comment">//120</span></span><br><span class="line">alert(factorial(<span class="number">5</span>)); <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
 <p>在此，变量trueFactorial获得了factorial的值，实际上是在另一个位置上保存了一个函数的指针。然后，我们又将一个简单地返回0的函数赋值给factorial变量。如果像原来的factorial()那样不使用arguments.callee，调用trueFactorial()就会返回0。可是，在解除了函数体内的代码与函数名的耦合状态之后，trueFactorial()仍然能够正常地计算阶乘，至于factorial()，它现在只是一个返回0的函数。函数内部的另一个特殊对象是this，其行为与java和C#中的this大致类似。换句话说，this引用的是函数执行的环境对象——或者也可以说是this值(当在网页的全局作用域中调用函数时，this对象引用的就是window)。来看下面的例子。</p>
+<p><strong>在闭包中使用this对象也可能会导致一些问题。this的对象是在运行时基于函数的执行环境绑定的：在全局函数中，this等于window，而当函数被作为某个对象的的方法调用时，this等于那个对象。</strong>7.2章闭包。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123;<span class="attr">color</span> : <span class="string">"blue"</span>&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayColor</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	alert(<span class="keyword">this</span>.color);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sayColor(); <span class="comment">//	red</span></span><br><span class="line">o.sayColor = sayColor; </span><br><span class="line">o.sayColor(); <span class="comment">// blue</span></span><br></pre></td></tr></table></figure>
 <p>上面这个函数sayColor()是在全局作用域中定义的，this对象引用了window对象。由于在调用函数之前，this的值并不确定，因此this可能会在代码执行过程中引用不同的对象。当在全局作用域中调用sayColor()时，this引用的是全局对象window，换句话说，对this.color求值会转换成对window.color求值，于是结果就返回了”red”。而当把这个函数赋给对象o并调用o.sayColor()时，this引用的是对象o，因此对this.color求值会转换成对o.color求值，结果就返回了”blue”。</p>
 <p>请读者一定要牢记，函数的名字仅仅是一个包含指针的变量而已。因此，即使是在不同的环境中执行，全局的sayColor()函数与o.sayColor()指向的仍然是同一个函数。</p>
