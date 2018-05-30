@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180530/101425991.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180530/101036624.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180530/111139590.jpg">
-<meta property="og:updated_time" content="2018-05-30T06:37:13.150Z">
+<meta property="og:updated_time" content="2018-05-30T09:17:19.499Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（4）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 第十章DOM 第十一章DOM扩展">
@@ -379,7 +379,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-30T14:37:13+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-30T17:17:19+08:00">
                 2018-05-30
               </time>
             
@@ -452,8 +452,8 @@
 <p>第十一章DOM扩展</p>
 </blockquote>
 <a id="more"></a>
-<p>可参考<a href="https://zhuanlan.zhihu.com/p/25703872" target="_blank" rel="noopener">JavaScript中的DOM对象</a>，写的很好。本文写的匆忙，自己看的。O(∩_∩)O哈哈~</p>
 <p>由于书上写的好啰嗦，受不鸟了。所以决定先从,<a href="http://www.w3school.com.cn/htmldom/index.asp" target="_blank" rel="noopener">w3cshool</a>了解些基础，以后在深挖。</p>
+<p>可参考<a href="https://zhuanlan.zhihu.com/p/25703872" target="_blank" rel="noopener">JavaScript中的DOM对象</a>，写的很好。本文写的匆忙，自己看的。O(∩_∩)O哈哈~</p>
 <p>“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。</p>
 <p>当网页被加载时，浏览器会创建页面的文档对象模型（Document Object Model）。</p>
 <p>HTML DOM 模型被构造为对象的树。</p>
@@ -482,7 +482,7 @@
 <li>childNodes - 节点（元素）的子节点</li>
 <li>attributes - 节点（元素）的属性节点</li>
 </ul>
-<h1 id="nodeName-属性"><a href="#nodeName-属性" class="headerlink" title="nodeName 属性"></a>nodeName 属性</h1><p>nodeName 属性规定节点的名称。</p>
+<h2 id="nodeName-属性"><a href="#nodeName-属性" class="headerlink" title="nodeName 属性"></a>nodeName 属性</h2><p>nodeName 属性规定节点的名称。</p>
 <ul>
 <li>nodeName 是只读的</li>
 <li>元素节点的 nodeName 与标签名相同</li>
@@ -688,8 +688,7 @@
 <p>  上述四个属性不仅可以读取，还可以赋值。outerText和innerText的区别在于outerText赋值时会把标签一起赋值掉</p>
 <p>Unlike innerText, though, innerHTML lets you work with HTML rich text and doesn’t automatically encode and decode text. In other words, innerText retrieves and sets the content of the tag as plain text, whereas innerHTML retrieves and sets the content in HTML format.   即innerHTML保留html标签</p>
 <h3 id="element-innerHTML"><a href="#element-innerHTML" class="headerlink" title="element.innerHTML"></a><code>element.innerHTML</code></h3><h3 id="node-innerText"><a href="#node-innerText" class="headerlink" title="node.innerText"></a><code>node.innerText</code></h3><p>value 属性设置或返回 textarea 的文本 （value是表单元素特有的属性,输入输出的是转义文本 ）。</p>
-<p> <strong>通过CSS选择器选取元素</strong></p>
-<p>Document对象的方法querySelectorAll()，它接受一个CSS选择器的字符串参数，返回一个代表文档中匹配选择器的所有元素的NodeList对象，并不是实时的。如果没有匹配的元素，则返回一个空的NodeList对象。</p>
+<h2 id="通过CSS选择器选取元素"><a href="#通过CSS选择器选取元素" class="headerlink" title="通过CSS选择器选取元素"></a><strong>通过CSS选择器选取元素</strong></h2><p>Document对象的方法querySelectorAll()，它接受一个CSS选择器的字符串参数，返回一个代表文档中匹配选择器的所有元素的NodeList对象，并不是实时的。如果没有匹配的元素，则返回一个空的NodeList对象。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.querySelectorAll(&apos;.div&apos;)  //匹配所有class名为div的元素</span><br></pre></td></tr></table></figure>
 <p>还有一个querySelector()方法，其原理和querySelectorAll()是一样的，不过它返回第一个匹配的元素（以文档顺序），如果没有匹配的元素就返回null。</p>
 <p>它们支持复杂的CSS选择器。</p>
@@ -704,7 +703,7 @@
 <h2 id="4-1概念："><a href="#4-1概念：" class="headerlink" title="4.1概念："></a>4.1<strong>概念：</strong></h2><ul>
 <li><strong>事件event）</strong>：是指用户或者浏览器自身执行的某种动作。如：click、load和mouseover。</li>
 <li><strong>事件类型（event type）：</strong>用来说明发生什么类型事件的字符串，有时候，称为事件名称（event name），如：’mousemove’，’keydown’，’load’</li>
-<li><strong>事件目标（event target）：</strong>发生的事件与之相关的对象。</li>
+<li><strong>事件目标（event target）：</strong>发生的事件与之相关的对象，比如x（x=document.getElementById(‘p1’)）。</li>
 <li><strong>事件处理程序（event handle/listener）</strong>：处理或者响应事件的函数。</li>
 <li><strong>事件对象（event object）</strong>：与特定事件相关且包含有关事件详细信息的对象，事件对象作为参数传递给事件处理程序函数（IE8除外，仅能通过window.event得到）。</li>
 </ul>
@@ -759,7 +758,10 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">id</span>=<span class="string">"child"</span>&gt;</span>事件冒泡<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"> <span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>),</span></span><br><span class="line"><span class="javascript"> child = <span class="built_in">document</span>.getElementById(<span class="string">'child'</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"> child.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">     alert(<span class="string">'我是目标事件'</span>);</span></span><br><span class="line"><span class="javascript"> &#125;, <span class="literal">true</span>);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript"> box.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    alert(<span class="string">'事件冒泡至DIV'</span>);</span></span><br><span class="line"><span class="javascript"> &#125;, <span class="literal">true</span>);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>此时我们点击a标签，首先弹出的是’事件冒泡至DIV’，其次弹出的是’我是目标事件’，正好与事件冒泡相反。</p>
 <p>事件对象（event object）指的是与特定事件相关且包含该事件详细信息的对象。我们可以通过传递给事件处理程序的参数获取事件触发后所产生的一系列方法和属性。</p>
-<h3 id="4-2-2Event对象"><a href="#4-2-2Event对象" class="headerlink" title="4.2.2Event对象"></a>4.2.2Event对象</h3><p>Event对象其实是一个<u>事件处理程序的参数</u>，当调用事件时，我们只需要将其传入事件函数就可以获取。代码如下：</p>
+<h3 id="4-2-2Event对象"><a href="#4-2-2Event对象" class="headerlink" title="4.2.2Event对象"></a>4.2.2Event对象</h3><p>事件对象。</p>
+<p><strong>在触发DOM上的某个事件时，会产生一个事件对象，这个事件包含着所有与事件有关的信息。包括导致事件的元素、事件的类型以及其它与特定事件相关的信息。</strong></p>
+<p><a href="http://www.w3school.com.cn/jsref/dom_obj_event.asp" target="_blank" rel="noopener">HTML DOM Event 对象</a></p>
+<p>Event对象其实是一个<u>事件处理程序的参数</u>，当调用事件时，我们只需要将其传入事件函数就可以获取。代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function getEvent(event) &#123;</span><br><span class="line">    event = event || window.event;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>上面的事件函数传入了一个名叫Event的参数作为事件对象，同时做了浏览器兼容处理。在IE8及以前本版之中，通过设置属性注册事件处理程序时，调用的时候并未传递事件对象，需要通过全局对象window.event来获取。所以上述代码中我们利用 || 来做判断，如果event对象存在则使用event，不存在则使用window.event。</p>
 <p>Event对象包含了几个方法和多个属性，通过这些方法和属性我们可以获取事件的详细信息并进行相关处理。</p>
@@ -823,158 +825,92 @@
 <tr>
 <th>属性</th>
 <th>当以下情况发生时，出现此事件</th>
-<th>FF</th>
-<th>N</th>
-<th>IE</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>onabort</td>
 <td>图像加载被中断</td>
-<td>1</td>
-<td>3</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onblur</td>
 <td>元素失去焦点</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onchange</td>
 <td>用户改变域的内容</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onclick</td>
 <td>鼠标点击某个对象</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>ondblclick</td>
 <td>鼠标双击某个对象</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onerror</td>
 <td>当加载文档或图像时发生某个错误</td>
-<td>1</td>
-<td>3</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onfocus</td>
 <td>元素获得焦点</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onkeydown</td>
 <td>某个键盘的键被按下</td>
-<td>1</td>
-<td>4</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onkeypress</td>
 <td>某个键盘的键被按下或按住</td>
-<td>1</td>
-<td>4</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onkeyup</td>
 <td>某个键盘的键被松开</td>
-<td>1</td>
-<td>4</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onload</td>
 <td>某个页面或图像被完成加载</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onmousedown</td>
 <td>某个鼠标按键被按下</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onmousemove</td>
 <td>鼠标被移动</td>
-<td>1</td>
-<td>6</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onmouseout</td>
 <td>鼠标从某元素移开</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onmouseover</td>
 <td>鼠标被移到某元素之上</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onmouseup</td>
 <td>某个鼠标按键被松开</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onreset</td>
 <td>重置按钮被点击</td>
-<td>1</td>
-<td>3</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onresize</td>
 <td>窗口或框架被调整尺寸</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
 </tr>
 <tr>
 <td>onselect</td>
 <td>文本被选定</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onsubmit</td>
 <td>提交按钮被点击</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
 </tr>
 <tr>
 <td>onunload</td>
 <td>用户退出页面</td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -1199,7 +1135,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-DOM-节点"><span class="nav-text">1.DOM 节点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-DOM-方法和属性"><span class="nav-text">2.DOM 方法和属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nodeName-属性"><span class="nav-text">nodeName 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeValue-属性"><span class="nav-text">nodeValue 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeType-属性"><span class="nav-text">nodeType 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-对象方法"><span class="nav-text">DOM 对象方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-HTML-元素"><span class="nav-text">修改 HTML 元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-1"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-2"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-3"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导航节点关系"><span class="nav-text">导航节点关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-根节点"><span class="nav-text">DOM 根节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#childNodes-和-nodeValue"><span class="nav-text">childNodes 和 nodeValue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-4"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#childNodes属性"><span class="nav-text">childNodes属性:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#children属性"><span class="nav-text">children属性:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firstChild属性："><span class="nav-text">firstChild属性：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerText-outerText-innerHTML-outerHTML"><span class="nav-text">innerText/outerText,innerHTML/outerHTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#element-innerHTML"><span class="nav-text">element.innerHTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#node-innerText"><span class="nav-text">node.innerText</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-HTML-DOM-实例"><span class="nav-text">3.HTML DOM 实例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Document-对象"><span class="nav-text">Document 对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-事件"><span class="nav-text">4.事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1概念："><span class="nav-text">4.1概念：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2事件流"><span class="nav-text">4.2事件流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1DOM级别与DOM事件"><span class="nav-text">4.2.1DOM级别与DOM事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM事件流"><span class="nav-text">DOM事件流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2Event对象"><span class="nav-text">4.2.2Event对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Event对象方法"><span class="nav-text">Event对象方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-stopPropagation"><span class="nav-text">1.stopPropagation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-preventDefault"><span class="nav-text">2.preventDefault</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-stopImmediatePropagation"><span class="nav-text">3.stopImmediatePropagation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Event对象属性"><span class="nav-text">Event对象属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-type属性"><span class="nav-text">1.type属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-target属性"><span class="nav-text">2.target属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-鼠标事件属性"><span class="nav-text">3. 鼠标事件属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-键盘事件属性"><span class="nav-text">4.键盘事件属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-事件绑定"><span class="nav-text">4.3 事件绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件监听（三个事件阶段）"><span class="nav-text">事件监听（三个事件阶段）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件委托"><span class="nav-text">事件委托</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-DOM-节点"><span class="nav-text">1.DOM 节点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-DOM-方法和属性"><span class="nav-text">2.DOM 方法和属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeName-属性"><span class="nav-text">nodeName 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeValue-属性"><span class="nav-text">nodeValue 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeType-属性"><span class="nav-text">nodeType 属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-对象方法"><span class="nav-text">DOM 对象方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改-HTML-元素"><span class="nav-text">修改 HTML 元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-1"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-2"><span class="nav-text">实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-3"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导航节点关系"><span class="nav-text">导航节点关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-根节点"><span class="nav-text">DOM 根节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#childNodes-和-nodeValue"><span class="nav-text">childNodes 和 nodeValue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-4"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#childNodes属性"><span class="nav-text">childNodes属性:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#children属性"><span class="nav-text">children属性:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#firstChild属性："><span class="nav-text">firstChild属性：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerText-outerText-innerHTML-outerHTML"><span class="nav-text">innerText/outerText,innerHTML/outerHTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#element-innerHTML"><span class="nav-text">element.innerHTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#node-innerText"><span class="nav-text">node.innerText</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过CSS选择器选取元素"><span class="nav-text">通过CSS选择器选取元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-HTML-DOM-实例"><span class="nav-text">3.HTML DOM 实例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Document-对象"><span class="nav-text">Document 对象</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-事件"><span class="nav-text">4.事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1概念："><span class="nav-text">4.1概念：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2事件流"><span class="nav-text">4.2事件流</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1DOM级别与DOM事件"><span class="nav-text">4.2.1DOM级别与DOM事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM事件流"><span class="nav-text">DOM事件流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2Event对象"><span class="nav-text">4.2.2Event对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Event对象方法"><span class="nav-text">Event对象方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-stopPropagation"><span class="nav-text">1.stopPropagation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-preventDefault"><span class="nav-text">2.preventDefault</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-stopImmediatePropagation"><span class="nav-text">3.stopImmediatePropagation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Event对象属性"><span class="nav-text">Event对象属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-type属性"><span class="nav-text">1.type属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-target属性"><span class="nav-text">2.target属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-鼠标事件属性"><span class="nav-text">3. 鼠标事件属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-键盘事件属性"><span class="nav-text">4.键盘事件属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-事件绑定"><span class="nav-text">4.3 事件绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件监听（三个事件阶段）"><span class="nav-text">事件监听（三个事件阶段）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件委托"><span class="nav-text">事件委托</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
