@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-05-31T02:27:40.511Z">
+<meta property="og:updated_time" content="2018-05-31T02:34:28.590Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
@@ -379,7 +379,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-31T10:27:40+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-31T10:34:28+08:00">
                 2018-05-31
               </time>
             
@@ -1206,7 +1206,7 @@
 <li>multiline(简写$*) 布尔值，表示是否所有表达式都使用多行模式。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text =<span class="string">"you are in haorooms 博客，看文章呢"</span>;</span><br><span class="line"><span class="keyword">var</span> pattern =<span class="regexp">/(.)aorooms/g</span>;</span><br><span class="line"><span class="keyword">if</span>(pattern.test(text))&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$_); <span class="comment">//you are in haorooms 博客，看文章呢</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$`"</span>]);<span class="comment">//you are in</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$'"</span>]);<span class="comment">//博客，看文章呢</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$&amp;"</span>]);<span class="comment">//haorooms</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$+"</span>]);<span class="comment">//h</span></span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>[<span class="string">"$*"</span>]);<span class="comment">//false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>除了上面几个属性之外还有 （RegExp.$1,RegExp.$2,RegExp.$3,RegExp.$4,RegExp.$5,RegExp.$6,RegExp.$7,RegExp.$8,RegExp.$9）,一共有9个。用来存储匹配的捕获组。在调用<code>exec()</code>或<code>test()</code>方法时，这些属性会被自动填充。其实，说简单的，就是可以获得（）括号内匹配的字符串。</p>
+<p>除了上面几个属性之外还有 <code>（RegExp.$1,RegExp.$2,RegExp.$3,RegExp.$4,RegExp.$5,RegExp.$6,RegExp.$7,RegExp.$8,RegExp.$9）</code>,一共有9个。用来存储匹配的捕获组。在调用<code>exec()</code>或<code>test()</code>方法时，这些属性会被自动填充。其实，说简单的，就是可以获得（）括号内匹配的字符串。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text =<span class="string">"you are in haorooms 博客，看文章呢"</span>;</span><br><span class="line"><span class="keyword">var</span> pattern =<span class="regexp">/(.)ao(..)om(.)/g</span>;</span><br><span class="line"><span class="keyword">if</span>(pattern.test(text))&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">1</span>);<span class="comment">//h</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">2</span>);<span class="comment">//ro</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">RegExp</span>.$<span class="number">3</span>);<span class="comment">//s</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="5-5-Function-类型"><a href="#5-5-Function-类型" class="headerlink" title="5.5 Function 类型"></a>5.5 Function 类型</h1><p>Function（函数）类型实际上是对象。每个函数都是Function类型的实例，而且都与其他引用类型一样具备属性和方法，由于函数是对象，因此函数名实际上也是一个指向函数对象的指针。参考4.1章节。没有函数重载的概念。</p>
 <p>函数定义：</p>
