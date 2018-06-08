@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-05-31T02:34:28.590Z">
+<meta property="og:updated_time" content="2018-06-06T02:34:08.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
@@ -379,8 +379,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-31T10:34:28+08:00">
-                2018-05-31
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-06T10:34:08+08:00">
+                2018-06-06
               </time>
             
           </span>
@@ -647,7 +647,7 @@
 <h2 id="5-2-1-检测数组"><a href="#5-2-1-检测数组" class="headerlink" title="5.2.1 检测数组"></a>5.2.1 检测数组</h2><p>参考3.4.1typeof 操作符。</p>
 <p>确定某个对象是不是数组</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (value <span class="keyword">instanceof</span> <span class="built_in">Array</span>)&#123;</span><br><span class="line">    <span class="comment">//对数组执行某些操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>instance of 操作符的问题在于，它假定只有一个全局执行环境。如果网页包含多个框架，实际上就是存在多个不同的全局执行环境，从而存在多个不同版本的Array构造函数。如果一个框架向另一个框架传入一个数组，那么传入的数组与在第二个框架原生创建的的数组分别具有各自不同的构造函数。</p>
+<p><code>instanceof</code> 操作符的问题在于，它假定只有一个全局执行环境。如果网页包含多个框架，实际上就是存在多个不同的全局执行环境，从而存在多个不同版本的Array构造函数。如果一个框架向另一个框架传入一个数组，那么传入的数组与在第二个框架原生创建的的数组分别具有各自不同的构造函数。</p>
 <p>为结决这个问题，ES5新增了<code>Array.isArray()</code>方法，</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="built_in">Array</span>.isArray(value))&#123;</span><br><span class="line">     <span class="comment">//对数组执行某些操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="5-2-2-转换方法"><a href="#5-2-2-转换方法" class="headerlink" title="5.2.2 转换方法"></a>5.2.2 转换方法</h2><p>所有的对象都具有<code>toLocaleString()</code>、<code>toString()</code>和<code>valueOf()</code>方法。其中调用<code>valueOf()</code>返回的还是数组本身，而调用数组的<code>toLocaleString()</code>方法会返回数组中每个值的字符串形式拼接而成的一个以逗号分隔的字符串。</p>
@@ -984,10 +984,7 @@
 <p>其中模式部分是正则表达式，每一个正则表达式都可带有<u>一个或多个</u>标志（flags），用以表明正则表达式的行为。</p>
 <p>如果指定，标志可以具有以下值的任意组合：</p>
 <ul>
-<li>g    全局搜索。也就是匹配目标字符串中所有可能的匹配项，而不是只进行第一次匹配。</li>
-<li>i    不区分大小写搜索。</li>
-<li>m    多行搜索。</li>
-<li>y    执行“粘性”搜索,匹配从目标字符串的当前位置开始，可以使用y标志。</li>
+<li>g    全局搜索。也就是匹配目标字符串中所有可能的匹配项，而不是只进行第一次匹配。<br>   i    不区分大小写搜索。<br>   m    多行搜索。<br>   y    执行“粘性”搜索,匹配从目标字符串的当前位置开始，可以使用y标志。</li>
 <li>u      Unicode; 将模式视为Unicode序列点的序列</li>
 </ul>
 <p>RegExp 构造函数创建了一个正则表达式对象，用于将文本与一个模式匹配。</p>
