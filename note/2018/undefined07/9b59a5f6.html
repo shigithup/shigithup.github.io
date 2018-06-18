@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-06-11T02:56:14.516Z">
+<meta property="og:updated_time" content="2018-06-18T09:09:38.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
@@ -379,8 +379,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-11T10:56:14+08:00">
-                2018-06-11
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-18T17:09:38+08:00">
+                2018-06-18
               </time>
             
           </span>
@@ -984,10 +984,9 @@
 <p>其中模式部分是正则表达式，每一个正则表达式都可带有<u>一个或多个</u>标志（flags），用以表明正则表达式的行为。</p>
 <p>如果指定，标志可以具有以下值的任意组合：</p>
 <ul>
-<li>g    全局搜索。也就是匹配目标字符串中所有可能的匹配项，而不是只进行第一次匹配。</li>
-<li>i    不区分大小写搜索。</li>
-<li>m    多行搜索。</li>
-<li>y    执行“粘性”搜索,匹配从目标字符串的当前位置开始，可以使用y标志。</li>
+<li>g    全局搜索。也就是匹配目标字符串中所有可能的匹配项，而不是只进行第一次匹配。<br>   i    不区分大小写搜索。<pre><code>m    多行搜索。
+y    执行“粘性”搜索,匹配从目标字符串的当前位置开始，可以使用y标志。
+</code></pre></li>
 <li>u      Unicode; 将模式视为Unicode序列点的序列</li>
 </ul>
 <p>RegExp 构造函数创建了一个正则表达式对象，用于将文本与一个模式匹配。</p>
@@ -1265,6 +1264,22 @@
 <p>使用 apply 和 call 来扩充作用域的最大的好处就是不需要与方法有任何的耦合关系。</p>
 <p>ECMAScript5 还定义了一个方法：bind()。这个方法会创建一个函数的实例，其 this 值会被绑定到传给 bind 函数的值 </p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123;<span class="attr">color</span>: <span class="string">"blue"</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayColor</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">	alert(<span class="keyword">this</span>.color);  </span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bindFun = sayColor.bind(o);  </span><br><span class="line">bindFun();<span class="comment">//blue</span></span><br></pre></td></tr></table></figure>
+<p>在JS中，这三者都是用来改变函数的this对象的指向的，他们有什么样的区别呢。<br>在说区别之前还是先总结一下三者的相似之处：<br>1、都是用来改变函数的this对象的指向的。<br>2、第一个参数都是this要指向的对象。<br>3、都可以利用后续参数传参。<br>那么他们的区别在哪里的，先看一个例子。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xw = &#123;</span><br><span class="line">	name : <span class="string">"小王"</span>,</span><br><span class="line">   gender : <span class="string">"男"</span>,</span><br><span class="line">   age : <span class="number">24</span>,</span><br><span class="line">   say : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		alert(<span class="keyword">this</span>.name + <span class="string">" , "</span> + <span class="keyword">this</span>.gender + <span class="string">" ,今年"</span> + <span class="keyword">this</span>.age);                          &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> xh = &#123;</span><br><span class="line">    name : <span class="string">"小红"</span>,</span><br><span class="line">    gender : <span class="string">"女"</span>,</span><br><span class="line">    age : <span class="number">18</span></span><br><span class="line">    &#125;</span><br><span class="line">xw.say();</span><br></pre></td></tr></table></figure>
+<p>本身没什么好说的，显示的肯定是小王 ， 男 ， 今年24。<br>那么如何用xw的say方法来显示xh的数据呢。<br>对于call可以这样：</p>
+<ol>
+<li>xw.say.call(xh);</li>
+</ol>
+<p>对于apply可以这样：</p>
+<ol>
+<li>xw.say.apply(xh);</li>
+</ol>
+<p>而对于bind来说需要这样：</p>
+<ol>
+<li>xw.say.bind(xh)();</li>
+</ol>
+<p>如果直接写xw.say.bind(xh)是不会有任何结果的，看到区别了吗？call和apply都是对函数的直接调用，而bind方法返回的仍然是一个函数，因此后面还需要()来进行调用才可以。</p>
+<p>参考自<a href="https://www.cnblogs.com/cosiray/p/4512969.html" target="_blank" rel="noopener">javascript中apply、call和bind的区别</a></p>
 <h1 id="5-6-基本包装类型"><a href="#5-6-基本包装类型" class="headerlink" title="5.6 基本包装类型"></a>5.6 基本包装类型</h1><p>为了便于操作基本类型值，ECMAScript 还提供了 3 个特殊的引用类型：Boolean、Number 和String。这些类型与本章介绍的其他引用类型相似，但同时也具有与各自的基本类型相应的特殊行为。实际上，每当读取一个基本类型值得时候，后台就会创建一个对应的基本包装类型的对象，从而让我们能够调用一些方法来操作这些数据。如下例子：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s1=<span class="string">"some text"</span>; </span><br><span class="line"><span class="keyword">var</span> s2=s1.substring(<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
 <p>这个例子中的变量 s1 包含一个字符串，字符串当然是基本类型值，而下一行代码调用了 s1的 substring() 方法，并将返回的结果保存在了 s2 中。我们知道，基本类型值不是对象，因而从逻辑上讲它们不应该有方法（尽管如我们所愿，它们确实有方法）。其实，为了让我们实现这种直观的操作，后台已经自动完成了一系列的处理。当第二行代码访问 s1 时，访问过程处于一种读取模式，也就是要·从内存中读取这个字符串的值。而在读取模式中访问字符串时，后台都会自动完成下列处理。</p>
