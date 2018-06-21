@@ -127,7 +127,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/084823261.png">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180507/091628457.jpg">
-<meta property="og:updated_time" content="2018-05-19T05:59:16.966Z">
+<meta property="og:updated_time" content="2018-06-20T03:54:05.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（1）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第一章 JavaScript简介 第二章 在HTML中使用JavaScript 第三章 基本概念   （语法、关键字、保留字、数据类型，操作符、语句）">
@@ -375,8 +375,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-19T13:59:16+08:00">
-                2018-05-19
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-20T11:54:05+08:00">
+                2018-06-20
               </time>
             
           </span>
@@ -523,12 +523,16 @@
 <p>表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。</p>
 <h2 id="3-2-关键字和保留字"><a href="#3-2-关键字和保留字" class="headerlink" title="3.2 关键字和保留字"></a>3.2 关键字和保留字</h2><p>关键字：用于表示控制语句的开始或结束，或者用于执行特定的操作等。</p>
 <p>保留字：虽然还没有任何特定用途，但他们将来有可能被用来关键字。</p>
-<h2 id="3-3-变量"><a href="#3-3-变量" class="headerlink" title="3.3 变量"></a>3.3 变量</h2><p>JavaScript 是一种动态类型语言，也就是说，变量的类型没有限制，变量可以随时更改类型，有效但不推荐。 每个变量仅仅是一个用来保存值的占位符而已。</p>
+<h2 id="3-3-变量"><a href="#3-3-变量" class="headerlink" title="3.3 变量"></a>3.3 变量</h2><p>先补充下常量：用关键字const，常量的名称一般全部大写，且要有初始值。否则，由于常量无法改变进而导致后面无法在对其进行赋值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const A = 1;</span><br></pre></td></tr></table></figure>
+<p>JavaScript 是一种动态类型语言，也就是说，变量的类型没有限制，变量可以随时更改类型，有效但不推荐。 每个变量仅仅是一个用来保存值的占位符而已。</p>
 <p>变量就是为“值”起名，然后引用这个名字，就等同于引用这个值。变量的名字就是变量名。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a = 1;</span><br></pre></td></tr></table></figure>
+<p><strong>变量名称通常形似驼峰。</strong></p>
+<p>驼峰形（首字母也大写）只会用于对象，小写驼峰形则用于变量和函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
 <p>上面的代码先声明变量<code>a</code>，然后在变量<code>a</code>与数值1之间建立引用关系，称为将数值1“赋值”给变量<code>a</code>。以后，引用变量名<code>a</code>就会得到数值1。最前面的<code>var</code>，是变量声明命令。它表示通知解释引擎，要创建一个变量<code>a</code>。 </p>
 <p>变量的声明和赋值，是分开的两个步骤，上面的代码将它们合在了一起，实际的步骤是下面这样。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var a;</span><br><span class="line">a = 1;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line">a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
 <p>如果只是声明变量而没有赋值，则该变量的值是<code>undefined</code>。<code>undefined</code>是一个 JavaScript 关键字，表示“无定义”。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 1;</span><br><span class="line">// 基本等同</span><br><span class="line">a = 1;</span><br></pre></td></tr></table></figure>
 <p>但是，不写<code>var</code>的做法，不利于表达意图，而且容易不知不觉地创建全局变量， 用<code>var</code>操作符定义的变量将成为定义该变量作用域的局部变量<u>即如果在函数中使用<code>var</code>定义一个变量，那么这个变量在函数退出后就会被销毁，在函数外部不能被访问到。</u></p>
