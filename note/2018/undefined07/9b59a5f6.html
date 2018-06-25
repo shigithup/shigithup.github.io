@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/100314990.jpg">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180510/173931748.png">
 <meta property="og:image" content="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png">
-<meta property="og:updated_time" content="2018-06-19T15:03:37.442Z">
+<meta property="og:updated_time" content="2018-06-25T02:18:55.848Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读《JavaScript高级程序设计》（2）">
 <meta name="twitter:description" content="[美]   Nicholas  C.Zakes    著   李松峰   曹力  译  （第三版） 本文以JS高程为主线， 阮一峰的《 JavaScript标准参考教程》为辅。 第四章 变量、作用域和内存问题 第五章  引用类型">
@@ -379,8 +379,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-19T23:03:37+08:00">
-                2018-06-19
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-25T10:18:55+08:00">
+                2018-06-25
               </time>
             
           </span>
@@ -701,7 +701,7 @@
 <p>如果要进行 <code>concat()</code> 操作的参数是数组，那么添加的是数组中的元素，而不是数组。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="built_in">document</span>.write(a.concat(<span class="number">4</span>,<span class="number">5</span>));<span class="comment">//1,2,3,4,5</span></span><br></pre></td></tr></table></figure>
 <p><code>push()</code>和<code>concat()</code>方法都可以将传的参数添加到数组的后面，只不过<code>push()</code>是在原数组上操作（改变的是原数组），<code>concat()</code>不会改变原数组，创建原数组的副本，并且把传的参数添加到新数组后面。</p>
-<p><code>push()</code>传递的参数是数组时，将整个数组传给原数组末尾，如示例中得到的结果[“a”, “b”, Array[2], Array[3]]</p>
+<p><code>push()</code>传递的参数是数组时，将整个数组传给原数组末尾，如示例中得到的结果<code>[&quot;a&quot;, &quot;b&quot;, Array[2], Array[3]]</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'a'</span>,<span class="string">'b'</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// ["a", "b"]</span></span><br><span class="line">arr.push([<span class="string">'c'</span>,<span class="string">'d'</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]);</span><br><span class="line"><span class="built_in">console</span>.log(arr); <span class="comment">// ["a", "b", Array[2], Array[3]]</span></span><br></pre></td></tr></table></figure>
 <h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><p><code>slice()</code>方法它也能基于当前数组创建一个新数组，而且对原数组也并不会有任何影响。<br><code>slice()</code>接受一个或两个参数，即要返回项的起始和结束位置（<strong>但不包括结束位置的项</strong>）。当只给<code>slice()</code>传递一个参数时，该方法返回从该参数指定位置开始到当前数组末尾的所有项。如下面示例：</p>
 <p><img src="https://www.w3cplus.com/sites/default/files/blogs/2016/1603/array-slice-2.png" alt=""></p>
@@ -713,7 +713,7 @@
 <p><code>splice(0,2)</code>会删除数组中前两项。</p>
 <p>指定三个参数，第一个参数为插入的起始位置，第二个参数为<code>0</code>(要删除的数组项数量，因为删除数量是为<code>0</code>，所以不做删除)，第三个参数是要插入的数组项。（数组项可任意多）</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'green'</span>,<span class="string">'blue'</span>];</span><br><span class="line"><span class="keyword">var</span> removed = colors.splice(<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">alert(colors); <span class="comment">//green,blue</span></span><br><span class="line">alert(removed);<span class="comment">//red</span></span><br><span class="line"></span><br><span class="line">removed = colors.splice(<span class="number">1</span>,<span class="number">0</span>,<span class="string">'yellow'</span>,<span class="string">'orange'</span>);</span><br><span class="line">alert(colors);<span class="comment">//grenn,yellow,orange,blue</span></span><br><span class="line">alert(removed);返回一个空数组，因为删除项为<span class="number">0</span>；</span><br><span class="line"></span><br><span class="line">removed = colors.splice(<span class="number">1</span>,<span class="number">1</span>,<span class="string">'red'</span>,<span class="string">'purple'</span>);</span><br><span class="line">alert(colors);<span class="comment">//grenn,red,purple,orange,blue</span></span><br><span class="line">alert(removed);</span><br></pre></td></tr></table></figure>
-<h2 id="5-2-7-位置方法"><a href="#5-2-7-位置方法" class="headerlink" title="5.2.7 位置方法"></a>5.2.7 位置方法</h2><p>ES5为数组实例添加了两个位置方法：<code>indexOf()</code>和<code>lastIndexi()</code>.这两个方法都可以接收两个参数：要<strong>查找的项</strong>和（可选）表示查找位置起点的索引。<code>indexOf()</code>从数组的开头（位置0）开始，<code>lastIndexi()</code>从数组的末尾开始。</p>
+<h2 id="5-2-7-位置方法"><a href="#5-2-7-位置方法" class="headerlink" title="5.2.7 位置方法"></a>5.2.7 位置方法</h2><p>ES5为数组实例添加了两个位置方法：<code>indexOf()</code>和<code>lastIndex()</code>.这两个方法都可以接收两个参数：要<strong>查找的项</strong>和（可选）表示查找位置起点的索引。<code>indexOf()</code>从数组的开头（位置0）开始，<code>lastIndex()</code>从数组的末尾开始。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>,<span class="string">'green'</span>,<span class="string">'blue'</span>];</span><br><span class="line">alert(colors.indexOf(<span class="string">'green'</span>));<span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
 <p>这两个方法都返回要查找的项在数组中的位置，<u>或者在没找到的情况下返回-1</u>.在比较查找的第一项与数组中的每一项时，要使用全等操作符，要严格相等。</p>
 <h2 id="5-2-8-迭代方法"><a href="#5-2-8-迭代方法" class="headerlink" title="5.2.8 迭代方法"></a>5.2.8 迭代方法</h2><p>五个迭代方法 都接受两个参数：要在每一项上运行的函数 和 运行该函数的作用域（可选）。传入这些方法中的函数会接收三个参数：数组项的值，该项在数组中的位置和数组对象本身。</p>
