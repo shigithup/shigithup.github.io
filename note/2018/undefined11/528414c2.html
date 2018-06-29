@@ -127,7 +127,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180411/202747010.png">
 <meta property="og:image" content="http://myphoto.shigaozhen.cn/myselfhexo/20180411/205550776.png">
-<meta property="og:updated_time" content="2018-06-25T12:33:05.998Z">
+<meta property="og:updated_time" content="2018-06-29T10:34:38.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html与css与js碎点">
 <meta name="twitter:description" content="1.引入css样式表 行内式（内联式） &amp;lt;标记名  style=&amp;quot;属性1：属性值1； 属性2：属性值2；&amp;quot;&amp;gt;   内容&amp;lt;/标记名&amp;gt;     内嵌式 &amp;lt;style type=&amp;quot;text/css&amp;quot;&amp;gt; 选择器{属性1：属性值1；} &amp;lt;/style&amp;gt;可放在文档的任何地方，浏览器从上至下解析代码">
@@ -375,8 +375,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-25T20:33:05+08:00">
-                2018-06-25
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T18:34:38+08:00">
+                2018-06-29
               </time>
             
           </span>
@@ -462,6 +462,10 @@
 </ul>
 <p>不要在属性值与单位之间留有空格。假如你使用 “margin-left: 20 px” 而不是 “margin-left: 20px” ，它仅在 IE 6 中有效，但是在 Mozilla/Firefox 或 Netscape 中却无法正常工作。</p>
 <h3 id="3-lt-DOCTYPE-gt"><a href="#3-lt-DOCTYPE-gt" class="headerlink" title="3.&lt;DOCTYPE&gt;"></a>3.<code>&lt;DOCTYPE&gt;</code></h3><p>&lt;!DOCTYPE&gt; 不是 HTML 标签。它为浏览器提供一项信息（声明），即 HTML 是用什么版本编写的.DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。</p>
+<p><strong>盒模型</strong></p>
+<p>避免触发IE盒模型的方法是使用<code>&lt;!DOCTYPE html&gt;</code>声明，告诉IE采用W3C盒子模型即可。 </p>
+<p>盒模型是CSS中重要的一个概念，但是在以前IE5.5以及更早的IE浏览用的不是标准盒模型，我们称之为IE盒模型。</p>
+<p>先说重要的区别：<br>两者的区别在于content的不同，IE盒模型的content包括border、padding</p>
 <h3 id="4-元素（行内元素块级元素）"><a href="#4-元素（行内元素块级元素）" class="headerlink" title="4.元素（行内元素块级元素）"></a>4.元素（行内元素块级元素）</h3><ul>
 <li>（1）行内元素有：a b span img input select strong（强调）</li>
 <li>（2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</li>
